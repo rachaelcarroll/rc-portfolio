@@ -15,7 +15,7 @@ export const Routes = () => {
                 <Route exact path='/' component={Home}/>
                 <Route exact path='/contact' component={Contact}/>
                 <Route exact path='/projects' component={ProjectPage}/>
-                <Route exact path='/download_resume' component={DownloadResume}/>
+                <Route exact path='/download-resume' component={DownloadResume}/>
             </Switch>
             </section>
         </Router>
