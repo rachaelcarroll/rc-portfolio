@@ -1,9 +1,9 @@
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import {Contact} from './Contact'
+import {Contact} from '../Contact'
 import {NavBar} from './NavBar'
-import {Home} from './Home'
-import {DownloadResume} from './DownloadResume'
-import {ProjectPage} from './ProjectPage'
+import {Home} from '../Home'
+import {DownloadResume} from '../DownloadResume'
+import {ProjectPage} from '../ProjectPage'
 
 export const Routes = () => {
 
