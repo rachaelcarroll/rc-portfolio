@@ -9,7 +9,7 @@ export const Routes = () => {
 
     return (
         <Router>
-            <NavBar/>
+            {/* <NavBar/> */}
             <section className="App">
             <Switch>
                 <Route exact path='/' component={Home}/>
