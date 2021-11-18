@@ -12,7 +12,6 @@ export const Home = () => {
             </div>
         </section>
         <Bio />
-        <Footer />
         </>
     )
 }
