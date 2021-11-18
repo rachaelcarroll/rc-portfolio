@@ -1,28 +1,18 @@
+import { Bio } from './Bio';
+import { Footer } from './Footer';
 
 export const Home = () => {
 
     return (
         <>
-        <section className='under-construction'>
-            <h1>under construction</h1>
-            <p>I’m currently redesigning my portfolio and updating it with my most recent projects. 
-               If you would like to see a sampling of my work or are interested in starting a project together, please get in touch.</p>
-            <a href='mailto:rachaelcarroll.m@gmail.com'>rachaelcarroll.m@gmail.com</a>
+        <section className='home-container'>
+            <div className='header'>
+                <h1 className='name'>rachael carroll</h1>
+                <h2 className='occupation'>software developer</h2>
+            </div>
         </section>
-        <section className='connect'>
-            <p>you can also find me on:</p>
-            <ul>
-                <li>
-                    <a href='https://www.linkedin.com/in/rachaelcarroll/'>linkedin</a>
-                </li>
-                <li>
-                    <a href='https://github.com/rachaelcarroll'>github</a>
-                </li>
-                <li>
-                    <a href='https://www.instagram.com/r_carr'>instagram</a>
-                </li>
-            </ul>
-        </section>
+        <Bio />
+        <Footer />
         </>
     )
 }
