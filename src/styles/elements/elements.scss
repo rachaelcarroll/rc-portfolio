@@ -2,18 +2,18 @@
   Elements - Landmarks
 ========================================================================== */
 
-body {
+  html {
+    background: black;
     width: 100vw;
     height: 100vh;
   }
-  
-  
-  html {
-    background: $color-primary;
-  }
-  
+
   body {
-    background-color: $color-primary;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    min-height: 100vh;
+
   }
   
   header {
