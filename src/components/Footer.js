@@ -7,7 +7,7 @@ export const Footer = () => {
             <a href ='https://github.com/rachaelcarroll' target='_blank'><img src={"https://i.ibb.co/NyYsL14/github-2.png"} className='footer-icon'/></a>  
             <a href ='https://www.linkedin.com/in/rachaelcarroll/' target='_blank'><img src={"https://i.ibb.co/fqvzWXm/linkedin-4.png"} className='footer-icon'/></a>  
         </section>
-        <p>designed and developed by rachael carroll</p>
+        <p>designed and developed by rachael carroll © {new Date().getFullYear()}</p>
         </footer>
     )
 }
