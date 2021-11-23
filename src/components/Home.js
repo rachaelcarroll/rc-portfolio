@@ -1,4 +1,5 @@
 import { Bio } from './Bio';
+import { TechStack } from './TechStack'
 import Fade from 'react-reveal/Fade';
 
 
@@ -15,6 +16,7 @@ export const Home = () => {
             </div>
         </section>
         <Bio />
+        <TechStack/>
         </>
     )
 }
