@@ -3,7 +3,7 @@ import {Contact} from '../Contact';
 import {Home} from '../Home';
 import {Projects} from '../Projects';
 
-const Navigation = () => {
+export const Navigation = () => {
 
     return (
             <Routes>
@@ -14,5 +14,4 @@ const Navigation = () => {
     )
 }
 
-export default Navigation;
 
