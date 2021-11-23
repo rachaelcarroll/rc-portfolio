@@ -1,29 +1,45 @@
 .nav {
     @include flex(row, end);
+    background: none;
+    position: sticky;
+    top: 0;
+    height: 4rem;
+    transition: all .2s ease-out;
 
-    p {
-        margin: 1rem;
-        color: white;
-        border: none;
-        display: inline-block;
-        position: relative;
+}
 
-        &:after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            transform: scaleX(0);
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: white;
-            transform-origin: bottom right;
-            transition: transform 0.25s ease-out;
-          }
-          
-          &:hover:after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-          }
-    }
+.nav-active {
+    @include flex(row, end);
+    background: none;
+    position: sticky;
+    top: 0;
+    height: 4rem;
+    background: rgba(100, 100, 100, 0.5);
+    transition: all .2s ease-in;
+}
+
+.navbtn {
+    margin: 1rem;
+    color: white;
+    border: none;
+    display: inline-block;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      
+      &:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
 }
