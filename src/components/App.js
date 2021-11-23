@@ -1,4 +1,4 @@
-import { Routes } from './Navigation/Routes';
+import { Navigation } from './Navigation/Navigation';
 import { NavBar } from './Navigation/NavBar';
 import { Footer } from './Footer';
 
@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
     <NavBar />
-    <Routes />
+    <Navigation />
     <Footer />
     </>
   );
