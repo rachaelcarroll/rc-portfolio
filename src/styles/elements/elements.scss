@@ -3,7 +3,7 @@
 ========================================================================== */
 
   html {
-    background: black;
+    background: rgb(41,41,41);
     width: 100vw;
     height: 100vh;
   }
@@ -11,7 +11,7 @@
   body {
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: rgb(41,41,41);
     min-height: 100vh;
 
   }
@@ -36,7 +36,7 @@
   button {
     @include flex(column, center);
     transition: 500ms;
-    border: $color-secondary 1.5px solid;
+    border: $color-secondary 1px solid;
     border-radius: 3px;
     padding: 0.1rem 0.5rem;
     font-family: $ff-secondary;
