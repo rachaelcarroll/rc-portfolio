@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 
-
-export const Bio = () => {
+const Bio = () => {
 
     return (
         <section className='about' id='about'>
@@ -21,3 +20,5 @@ export const Bio = () => {
         </section>
     )
 }
+
+export default Bio;
