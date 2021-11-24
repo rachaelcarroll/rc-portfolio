@@ -1,22 +1,26 @@
-.home-container {
-    background: url('../../images/bg2.png') no-repeat;
-    background-size: cover;
-    background-position: center;
+.home {
+    @include flex(column, center);
+    // overflow: hidden;
     background-attachment: fixed;
     height: 100vh;
-    min-width: 100%;
+    min-width: 100vw;
     margin: 0;
     padding: 0;
 }
 
-.header {
-    @include flex(column, center);
-    color: white;
-    padding-top: 15rem;
-    padding-right: 50rem;
-    z-index: 2;
-    position: relative;
+.mountain {
+  z-index: 2;
+  min-width: 100vw;
 }
+
+// .header {
+//     @include flex(column, center);
+//     color: white;
+//     padding-top: 15rem;
+//     padding-right: 50rem;
+//     z-index: 2;
+//     position: relative;
+// }
 
 .about-header {
   color: white;
