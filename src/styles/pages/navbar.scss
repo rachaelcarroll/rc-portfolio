@@ -42,4 +42,8 @@
         transform: scaleX(1);
         transform-origin: bottom left;
       }
-}
+  }
+    .active {
+      background: #6ba9a8;
+      color: white;
+    }

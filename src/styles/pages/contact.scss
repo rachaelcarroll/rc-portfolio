@@ -1,0 +1,5 @@
+.contact {
+    @include flex(column, center);
+    min-height: 75vh;
+    color: white;
+}
