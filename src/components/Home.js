@@ -1,6 +1,5 @@
 import { Bio } from './Bio';
 import { TechStack } from './TechStack'
-import Fade from 'react-reveal/Fade';
 import { useState, useEffect } from 'react';
 import mountain from '../images/mountain.png'
 
@@ -10,7 +9,6 @@ export const Home = () => {
     useEffect(() => {
         fetchImage()
         .then(data => setApod(data.url))
-        console.log("???", apod)
     },[apod])
 
     const fetchImage = () => {
@@ -25,13 +23,7 @@ export const Home = () => {
 
     return (
         <>
-        <section className='home'style={{background: `url(${apod}) no-repeat`, backgroundSize: 'cover'}}>
-            {/* <div className='header'>
-            <Fade top>
-                <h1 className='name'>rachael carroll</h1>
-                <h2 className='occupation'>software developer</h2>
-            </Fade>
-            </div> */}
+        <section className='home' style={{backgroundImage: `url(${apod})`, backgroundSize: 'cover', backgroundAttachment: 'fixed'}}>
             <div className='home-bottom'>
                 <img src={ mountain } className='mountain' alt='mountain and sunflower field'/>
             </div>
