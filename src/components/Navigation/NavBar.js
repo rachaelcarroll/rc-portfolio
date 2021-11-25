@@ -1,11 +1,11 @@
 import { HashLink } from 'react-router-hash-link';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 export const NavBar = () => {
 
     const [navBar, setNavBar] = useState(false);
-
+    const location = useLocation().pathname
     
     useEffect(() => {
         changeBackground()
@@ -24,13 +24,13 @@ export const NavBar = () => {
     return (
         <section className={navBar ? 'nav-active' : 'nav'}>
             <HashLink smooth to='/#about'>
-                <p className='navbtn'>about</p>
+                <p className={`navbtn : ${location === '/#about'} && 'active'`}>about</p>
             </HashLink>
-            <NavLink to='/projects'>
+            <NavLink to='/projects' className={`${location === '/projects'} && 'active'`}>
                 <p className='navbtn'>projects</p>
             </NavLink>
             <NavLink to='/contact'>
-                <p className='navbtn'>contact</p>
+                <p className={`navbtn : ${location === '/contact'} && 'active'`}>contact</p>
             </NavLink>
         </section>
     )
