@@ -1,25 +1,18 @@
 import { Bio } from './Bio';
 import { TechStack } from './TechStack'
 import { useState, useEffect } from 'react';
-import mountain from '../images/mountain.png'
+import { fetchImage } from '../util/apiCalls';
+import mountain from '../images/mountain.png';
+import nightsky from '../images/nightsky5.jpg';
 
 export const Home = () => {
     const [apod, setApod] = useState('');
 
     useEffect(() => {
         fetchImage()
-        .then(data => setApod(data.url))
+        .then(data => 
+            data.url.includes('youtube') ? setApod(nightsky) : setApod(data.url))
     },[apod])
-
-    const fetchImage = () => {
-        return fetch('https://api.nasa.gov/planetary/apod?api_key=1tfzjlOIYDaAuOUBR2Tw5LRAvteh2KPbVeqGpMQ2')
-        .then(response => {
-          if(!response.ok) {
-            throw Error('Error fetching APOD')
-          }
-          return response.json()
-        })
-    }
 
     return (
         <>
