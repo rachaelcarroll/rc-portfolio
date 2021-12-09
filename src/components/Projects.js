@@ -6,6 +6,7 @@ export const Projects = () => {
     const projects = projectData.map(project => {
         return (
             <Project 
+            key={project.id}
             project={project}
             />
         )
