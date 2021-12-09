@@ -3,7 +3,7 @@ import { TechStack } from './TechStack'
 import { useState, useEffect } from 'react';
 import { fetchImage } from '../util/apiCalls';
 import mountain from '../images/mountain.png';
-import nightsky from '../images/nightsky5.jpg';
+import nightsky from '../images/nightsky.jpg';
 
 export const Home = () => {
     const [apod, setApod] = useState('');

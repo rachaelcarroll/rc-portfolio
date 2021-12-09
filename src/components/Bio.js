@@ -12,7 +12,7 @@ export const Bio = () => {
                 <section className='headshot-and-bio'>
                     <Fade bottom duration={1000} delay={600} distance="30px">
                     <div className='headshot'>
-                        <img alt='profile picture' src='https://i.imgur.com/PTHFbBC.png' />
+                        <img alt='rachael headshot' src='https://i.imgur.com/PTHFbBC.png'/>
                     </div>
                     </Fade>
                     <Fade left duration={1000} delay={1000} distance='30px'>
