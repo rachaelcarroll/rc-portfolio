@@ -1,5 +1,5 @@
-import { Navigation } from './components/Navigation/Navigation';
-import { NavBar } from './components/Navigation/NavBar';
+import { Navigation } from './components/Navigation';
+import { NavBar } from './components/NavBar';
 import { Footer } from './components/Footer';
 
 const App = () => {
