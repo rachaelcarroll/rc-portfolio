@@ -24,6 +24,7 @@ export const Bio = () => {
                         <span className='bio-btns'>
                             <a
                             target="_blank"
+                            rel="noreferrer"
                             href='https://drive.google.com/file/d/1R7JtGgg4RKQzCGywsf0Lq_EiJcfYbUnk/view?usp=sharing'
                             >
                                 <button className='bio-btn'>
