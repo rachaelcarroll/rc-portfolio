@@ -1,8 +1,5 @@
 .home {
     @include flex(column, center);
-    // overflow: hidden;
-    // background-attachment: fixed;
-    // background-size: cover;
     height: 100vh;
     min-width: 100vw;
     margin: 0;
@@ -14,21 +11,12 @@
   min-width: 100vw;
 }
 
-// .header {
-//     @include flex(column, center);
-//     color: white;
-//     padding-top: 15rem;
-//     padding-right: 50rem;
-//     z-index: 2;
-//     position: relative;
-// }
-
 .about-header {
   color: white;
 }
 
-  .about {
-    margin: 2rem ​7rem 0rem 7rem;
+.about {
+  margin: 5rem 2rem 0rem 2rem;
     p {
         color: white;
         padding: 0rem 2rem 1rem 2rem;
