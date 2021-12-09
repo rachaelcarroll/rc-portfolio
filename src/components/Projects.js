@@ -1,5 +1,5 @@
 import { Project } from './Project';
-import { projectData } from '../util/projectData';
+import { projectData } from './projectData';
 
 export const Projects = () => {
 
