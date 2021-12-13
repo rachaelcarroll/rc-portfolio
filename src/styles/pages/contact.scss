@@ -2,4 +2,9 @@
     @include flex(column, center);
     min-height: 75vh;
     color: white;
+
+    h2 {
+        text-align: center;
+        padding: 1rem;
+    }
 }
