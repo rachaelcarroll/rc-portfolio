@@ -1,5 +1,6 @@
 import { Project } from './Project';
 import { projectData } from './projectData';
+import Slide from 'react-reveal/Slide';
 
 export const Projects = () => {
 
@@ -13,9 +14,13 @@ export const Projects = () => {
     })
 
     return (
-        <section>
-            {projects}
-        </section>
+        <>
+        <Slide bottom duration={1000} delay={300} distance="0px">
+            <section className='project-board'>
+                {projects}
+            </section>
+        </Slide>
+        </>
     )
 }
 
