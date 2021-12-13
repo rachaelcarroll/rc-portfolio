@@ -43,19 +43,15 @@
     color: $color-secondary;
     &:hover {
       transition: 500ms;
-      border: $color-light 1.5px solid;
-      text-shadow: 0 0 1.5px $color-light;
+      border: $light 1.5px solid;
+      text-shadow: 0 0 1.5px $light;
       color: $color-primary;
     }
   }
   
   a {
-    color: $color-dark;
+    color: $dark;
   }
-
-  // h1 {
-  //   @include heading;
-  // }
 
   h2 {
     font-size: $font-size-heading;
@@ -65,8 +61,10 @@
   //   @include paragraph;
   // }
 
-  // p {
-  //   @include paragraph;
-  // }
+
+  p {
+    font-family: $ff-secondary;
+    font-size: $font-size-paragraph;
+  }
 
   
