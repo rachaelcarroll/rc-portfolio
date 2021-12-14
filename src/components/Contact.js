@@ -10,7 +10,7 @@ export const Contact = () => {
             <h2>Who knows, it could lead to the next great idea.</h2>
             </Zoom>
 
-            <Flip left cascade delay={800}>
+            <Flip left cascade delay={1500}>
                 <a href ='mailto:rachaelcarroll.m@gmail.com'
                 style={{margin: '4rem', color: 'white'}}>rachaelcarroll.m@gmail.com</a>  
             </Flip>
