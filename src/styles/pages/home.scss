@@ -1,7 +1,6 @@
 .home {
     @include flex(column, center);
     height: 100vh;
-    // min-width: 100vw;
     margin-bottom: 2rem;
     padding: 0;
     position: relative;
@@ -10,8 +9,8 @@
 .mountain {
   z-index: 2;
   min-width: 100vw;
-  max-height: 75vh;
-  position: fixed;
+  height: 120vh;
+  position: absolute;
   left: 0px;
   bottom: -25px;
 }
@@ -30,11 +29,12 @@
   }
 
   .headshot-and-bio {
-    @include flex(row, center);
+    @include mediaQueries(about);
+    @include flex(row, center, start);
 
     img {
       height: auto;
-      max-width: 20rem;
+      max-width: 15rem;
       box-shadow: $box-shadow;
     }
   }
@@ -44,6 +44,7 @@
   }
   .bio-btn {
     @include flex(row, center);
+    margin: 1rem;
     color: white;  
 
     &::after {
