@@ -26,6 +26,10 @@
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+
+    img {
+      opacity: .8;
+    }
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -50,7 +54,7 @@
   
   /* Style the back side */
   .project-card-back {
-    background-color: #bbb;
+    background-color: rgba(176, 175, 175, 0.529);
     color: white;
     transform: rotateY(180deg);
 
