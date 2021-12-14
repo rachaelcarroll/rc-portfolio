@@ -16,11 +16,8 @@ Base - Media Queries
       transition: 100ms;
       @if $property==grid {
         @include grid(mobile);
-      } @else if $property==logo {
-        transition: 1s;
-        height: 8rem;
-        width: 8rem;
-        margin-bottom: 0 0.5rem 1rem 0;
+      } @else if $property==about {
+        @include flex(column, center, center);
       } 
     }
   }
@@ -32,11 +29,9 @@ Base - Media Queries
       transition: 100ms;
       @if $property==grid {
         @include grid(tablet);
-      } @else if $property==logo {
-        transition: 1s;
-        height: 10rem;
-        width: 10rem;
-      }
+      } @else if $property==about {
+        @include flex(row, center, start);
+      } 
     }
   }
   
@@ -47,11 +42,9 @@ Base - Media Queries
       transition: 100ms;
       @if $property==grid {
         @include grid(desktop);
-      } @else if $property==logo {
-        transition: 1s;
-        height: 18rem;
-        width: 18rem;
-      }
+      } @else if $property==about {
+        @include flex(row, center, start);
+      } 
     }
   }
 
