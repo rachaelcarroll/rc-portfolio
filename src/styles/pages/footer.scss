@@ -1,9 +1,14 @@
 footer {
     @include flex(column, center);
     color: white;
+    background-color: rgba(0, 0, 0, 0.714);
     padding: .5rem;
     bottom: 0;
     width: 100%;
+
+    p {
+        font-size: .7rem;
+    }
 }
 
 .footer-links {
