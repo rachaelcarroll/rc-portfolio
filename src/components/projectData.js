@@ -1,7 +1,19 @@
+import scene from '../images/thescene.png';
+import overlook from '../images/overlook.png';
+import clientell from '../images/clientell.png';
+import onlydevs from '../images/onlydevs.png';
+import portfolio from '../images/portfolio.png'
+import rancid from '../images/rancid.png';
+import ranch from '../images/ranch.png';
+import rosemary from '../images/rosemary.png';
+
+
+
+
 export const projectData = [
     {
       name: 'ClienTell',
-      image: '',
+      image: clientell,
       summary: 'A platform that empowers sex workers to document and share their date experiences',
       tech: 'GraphQL | ApolloClient | React | Router | Circle CI | JavaScript | SCSS | HTML5 | Cypress | Netlify',
       accomplishments: 'Self-taught GraphQL and working on a full-stack team',
@@ -11,30 +23,30 @@ export const projectData = [
       id: 1
     },
     {
-      name: 'OnlyDevs',
-      image: '',
-      summary: 'A question-answer forum for technical front end development concepts',
-      tech: 'React | Router | React Hooks | JavaScript | Cypress | SCSS | PostgreSQL | Express.js | Heroku',
-      accomplishments: 'Self-taught backend technologies',
-      timeline: '10 days',
-      deployedLink: 'https://onlydevs.herokuapp.com/',
-      repoLink: 'https://github.com/rachaelcarroll/only-devs',
-      id: 2
-    },
-    {
       name: 'The Scene',
-      image: '',
+      image: scene,
       summary: 'An application that allows a user to shuffle and save amusing conversation starters',
       tech: 'React | Router | React Hooks | JavaScript | SCSS | Cypress | REST API | Vercel',
       accomplishments: 'Implemented React Hooks',
       timeline: '1 week',
       deployedLink: '',
       repoLink: '',
+      id: 2
+    },
+    {
+      name: 'OnlyDevs',
+      image: onlydevs,
+      summary: 'A question-answer forum for technical front end development concepts',
+      tech: 'React | Router | React Hooks | JavaScript | Cypress | SCSS | PostgreSQL | Express.js | Heroku',
+      accomplishments: 'Self-taught backend technologies',
+      timeline: '10 days',
+      deployedLink: 'https://onlydevs.herokuapp.com/',
+      repoLink: 'https://github.com/rachaelcarroll/only-devs',
       id: 3
     },
     {
       name: 'Portfolio',
-      image: '',
+      image: portfolio,
       summary: 'The portfolio site that you are currently viewing',
       tech: 'React | JavaScript | SCSS | Figma | Google Analytics | Vercel',
       accomplishments: 'Implemented Google Analytics to track site traffic',
@@ -44,7 +56,7 @@ export const projectData = [
     },
     {
       name: 'Rancid Tomatillos',
-      image: '',
+      image: rancid,
       summary: 'A movie browsing application',
       tech: 'React | React Router | Cypress | JavaScript | CSS3 | HTML5 | Vercel | Miro',
       accomplishments: 'First application created with React and Cypress',
@@ -55,7 +67,7 @@ export const projectData = [
     },
     {
       name: 'The Overlook',
-      image: '',
+      image: overlook,
       summary: 'An application to book and display hotel reservations',
       tech: 'JavaScript | HTML5 | SCSS | WebPack | Fetch API | Day.js | Lighthouse | Sketch',
       accomplishments: 'Robust unit testing, GET & POST network requests, Accessibility rating of 100',
@@ -66,7 +78,7 @@ export const projectData = [
     },
     {
         name: 'Rosemary & Sage',
-        image: '',
+        image: rosemary,
         summary: 'An application to view, favorite, and search through a collection of recipes',
         tech: 'HTML5 | CSS3 | Mocha | Chai | Webpack',
         accomplishments: 'Utilized array prototype methods to perform data manipulation',
@@ -77,7 +89,7 @@ export const projectData = [
       },
     {
         name: 'Ranch!',
-        image: '',
+        image: ranch,
         summary: 'A static comp for Ranch rankings',
         tech: 'HTML5 | CSS3',
         accomplishments: 'DRY and semantic HTML and CSS, responsive across various screen sizes',
