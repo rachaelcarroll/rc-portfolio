@@ -9,28 +9,29 @@
 .mountain {
   z-index: 2;
   min-width: 100vw;
-  height: 120vh;
+  height: 130vh;
   position: absolute;
   left: 0px;
   bottom: -25px;
+  // background: linear-gradient(black, white);
 }
 
 .about-header {
   color: white;
-  margin: 0rem 0rem 2rem 0rem;
+  margin: 0rem 0rem 0rem 2rem;
+  place-self: baseline; 
+  font-size: 2rem;
 }
-
-.about {
-  margin: 3rem;
-    p {
-        color: white;
-        padding: 0rem 2rem 1rem 2rem;
-    }
-  }
 
   .headshot-and-bio {
     @include mediaQueries(about);
     @include flex(row, center, start);
+    background-color: rgba(247, 213, 184, 0.892);
+    box-shadow: $box-shadow;
+  }
+
+  .headshot {
+    @include flex(column, center);
 
     img {
       height: auto;
@@ -39,21 +40,33 @@
     }
   }
 
+  .bio-details {
+    margin: .5rem;
+  }
+
+  .bio-text {
+      color: black;
+      padding: 1rem 2rem 0rem 2rem;
+  }
+
   .bio-btns {
-    @include flex(row, center);
+    @include flex(row, end);
+    margin: .5rem;
   }
   .bio-btn {
     @include flex(row, center);
     margin: 1rem;
-    color: white;  
+    color: white;
+    height: 2rem; 
+    width: 7rem; 
 
     &::after {
       background: white;
     }
   
     &:hover {
-      background: white;
-      color: teal;
+      background: rgb(22, 55, 55);
+      color: white;
       text-decoration: none;
   
       &::after {
@@ -73,12 +86,12 @@
     @include flex(row, center);
   }
   
-  .tech-icon {
-    @include flex(column, center);
-    justify-content: center;    
-    width: 2rem;
+  .tech-icons {
+    @include flex(row, space-evenly);
     margin: 1rem;
+    color: white;
   }
+
 
   .tech-content {
     margin-left: 4em;
@@ -96,9 +109,10 @@
   }
   
   .frontend, .backend, .design {
-    height: 15rem;
+    @include flex(column, center);
+    height: 16rem;
     box-shadow: 5px -6px 0px rgb(90,88,106);
-    border-radius: 4em;
+    border-radius: 2em;
     align-self: center;
     background-color: white;
     color: #222831;
@@ -115,7 +129,7 @@
     color: #222831;
   }
 
-  .test {
+  .tech-details {
     @include flex(row, space);
   }
   
