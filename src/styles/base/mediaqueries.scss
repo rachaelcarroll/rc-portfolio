@@ -17,7 +17,7 @@ Base - Media Queries
       @if $property==grid {
         @include grid(mobile);
       } @else if $property==about {
-        @include flex(column, center, center);
+        @include flex(column-reverse, center, center);
       } 
     }
   }
