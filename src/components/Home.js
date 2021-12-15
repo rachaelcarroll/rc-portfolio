@@ -22,7 +22,7 @@ export const Home = () => {
             </div>
         </section>
         <Bio />
-        <TechStack/>
+        {/* <TechStack/> */}
         </>
     )
 }
