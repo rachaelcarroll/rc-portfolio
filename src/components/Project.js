@@ -13,16 +13,16 @@ export const Project = ({ project }) => {
                 src={project.image}
                 />
                 <div className='project-card-back'>
-                    <h3>{project.name}</h3>
-                    <p className='project-text'>{project.summary}</p>
-                    <p className='project-text'>{project.tech}</p>
-                    {/* <p className='project-text'>{project.accomplishments}</p> */}
-                    <div className='project-links'>
-                        <a href={project.repoLink}><img alt='github logo' src={github}/></a>
+                    <div className='project-links' style={{borderBottom: '1px solid white'}}>
+                        <a href={project.repoLink}><img alt='github logo' src={github}/></a>                     
+                        <h3>{project.name}</h3>
                         {project.deployedLink !== '' && (
                         <a href={project.deployedLink}><img alt={`${project.name} website icon`} src={web}/></a>
                         )}
                     </div>
+                    <p className='summary-text'>{project.summary}</p>
+                    <p>ACCOMPLISHMENTS: <span className='project-text'>{project.accomplishments}</span></p>
+                    <p className='project-text'>{project.tech}</p>
                 </div>
             </div>
         </article>
