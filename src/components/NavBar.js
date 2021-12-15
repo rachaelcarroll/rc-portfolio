@@ -22,15 +22,21 @@ export const NavBar = () => {
 
     return (
         <section className={navBar ? 'nav-active' : 'nav'}>
-            <HashLink smooth to='/#about'>
-                <p className={`navbtn : ${location === '/#about'} && 'active'`}>about</p>
-            </HashLink>
-            <NavLink to='/projects' className={`${location === '/projects'} && 'active'`}>
-                <p className='navbtn'>projects</p>
-            </NavLink>
-            <NavLink to='/contact'>
-                <p className={`navbtn : ${location === '/contact'} && 'active'`}>contact</p>
-            </NavLink>
+            <div className='nav-header'>
+                <h1 className='nav-name'>Rachael Carroll</h1>
+                <p className='nav-title'> | SOFTWARE DEVELOPER </p>
+            </div> 
+            <div className='nav-links'>
+                <HashLink smooth to='/#about'>
+                    <p className={`navbtn : ${location === '/#about'} && 'active'`}>about</p>
+                </HashLink>
+                <NavLink to='/projects' className={`${location === '/projects'} && 'active'`}>
+                    <p className='navbtn'>portfolio</p>
+                </NavLink>
+                <NavLink to='/contact'>
+                    <p className={`navbtn : ${location === '/contact'} && 'active'`}>contact</p>
+                </NavLink>
+            </div> 
         </section>
     )
 }
