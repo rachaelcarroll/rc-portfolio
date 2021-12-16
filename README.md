@@ -1,8 +1,8 @@
 ## Portfolio Site
 
-This is the first iteration of my portfolio. 
+This is the first iteration of my portfolio.
 
-View the deployed site, [here!](https://www.rcarroll.co/)
+View the deployed site, [here.](https://www.rcarroll.co/)
 
 ### To view project locally   
    * Fork and clone repository
