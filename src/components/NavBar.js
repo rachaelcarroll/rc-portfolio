@@ -25,7 +25,7 @@ export const NavBar = () => {
         <section className={navBar ? 'nav-active' : 'nav'}>
             <Link to='/'>
                 <div className='nav-header'>
-                    <img src={logo}></img>
+                    <img src={logo} alt='rachael carroll logo'></img>
                 </div> 
             </Link>
                 <div className='nav-links'>
