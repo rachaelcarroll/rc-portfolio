@@ -1,17 +1,41 @@
 import Fade from 'react-reveal';
 import { BsBrush, BsCodeSlash, BsTerminal } from 'react-icons/bs';
-
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 export const TechStack = () => {
 
     return (
         <main className='tech-container'>
-        <div className='tech-icons'>  
-            <BsCodeSlash style={{fontSize: '4rem', margin: '1rem'}}/>
-            <BsTerminal style={{fontSize: '4rem', margin: '1rem'}}/>
-            <BsBrush style={{fontSize: '4rem', margin: '1rem'}}/>
-        </div>
         <Fade bottom>
+            <div className='tech-icons'>  
+            <Popup trigger={<button> 
+                <BsCodeSlash style={{fontSize: '4rem', margin: '1rem'}}/>
+            </button>} position="bottom center" on={['hover', 'focus']}>
+                <div className='tech-specs'>
+                    <h3> - Front End - </h3> 
+                    <p>React / JavaScript / TypeScript / HTML5 / SCSS / Cypress </p>
+                </div>
+            </Popup>
+            <Popup trigger={<button> 
+                <BsTerminal style={{fontSize: '4rem', margin: '1rem'}}/>
+            </button>} position="bottom center" on={['hover', 'focus']}>
+                <div className='tech-specs'>
+                    <h3> - Back End - </h3> 
+                    <p>Node.js / Express / PostgreSQL</p>
+                </div>
+            </Popup>
+            <Popup trigger={<button> 
+                <BsBrush style={{fontSize: '4rem', margin: '1rem'}}/>
+            </button>} position="bottom center" on={['hover', 'focus']}>
+                <div className='tech-specs'>
+                    <h3> - Design Tools - </h3> 
+                    <p>Figma / Sketch / Miro / Adobe</p>
+                </div>
+            </Popup>        
+            </div>
+        </Fade>
+        {/* <Fade bottom>
         <div className='tech'>
             <section className='frontend'>
                 <h3 className='tech-header-text'>Frontend</h3>
@@ -45,7 +69,7 @@ export const TechStack = () => {
                 </ul>
             </section>
     </div>
-    </Fade>
+    </Fade> */}
     </main>
     )
 }
