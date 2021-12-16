@@ -8,7 +8,7 @@ export const Bio = () => {
     return (
         <main id='about' className='about'>
                 <Fade bottom duration={1000} delay={300} distance="0px">
-                  <h1 className='about-header'>Hello</h1>
+                  <h1 className='about-header'>hello</h1>
                 </Fade>
                 <section className='headshot-and-bio'>
                     <Fade left duration={1000} delay={1000} distance='30px'>
