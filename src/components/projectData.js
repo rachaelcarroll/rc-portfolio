@@ -6,7 +6,7 @@ import portfolio from '../images/portfolio.png'
 import rancid from '../images/rancid.png';
 import ranch from '../images/ranch.png';
 import rosemary from '../images/rosemary.png';
-
+import daily from '../images/thedaily.png';
 
 
 
@@ -23,7 +23,7 @@ export const projectData = [
       id: 1
     },
     {
-      name: 'The Scene',
+      name: 'the scene',
       image: scene,
       summary: 'An application that allows a user to shuffle and save amusing conversation starters',
       tech: 'React | Router | React Hooks | JavaScript | SCSS | Cypress | REST API | Vercel',
@@ -87,7 +87,18 @@ export const projectData = [
         repoLink: 'https://github.com/rachaelcarroll/Whats-Cookin',
         id: 7
       },
-    {
+      {
+        name: 'the daily',
+        image: daily,
+        summary: 'A daily news reader application, built in just 8 hours',
+        tech: 'React | Hooks | Router | SCSS | Netlify | Miro',
+        accomplishments: 'An 8 hour React challenge: Consumed the NYTimes API to display, categorize, and search daily news',
+        timeline: '1 day',
+        deployedLink: 'https://the-daily-take-home.netlify.app/',
+        repoLink: 'https://github.com/rachaelcarroll/nyt-reader',
+        id: 8
+      },
+      {
         name: 'Ranch!',
         image: ranch,
         summary: 'A static comp for Ranch rankings',
@@ -96,7 +107,7 @@ export const projectData = [
         timeline: '5 days',
         deployedLink: 'https://rachaelcarroll.github.io/static-comp/',
         repoLink: 'https://github.com/rachaelcarroll/static-comp',
-        id: 8
+        id: 9
       }
 
   ]
