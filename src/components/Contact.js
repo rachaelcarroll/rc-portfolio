@@ -11,8 +11,8 @@ export const Contact = () => {
             </Zoom>
 
             <Flip left cascade delay={1500}>
-                <a href ='mailto:rachaelcarroll.m@gmail.com'
-                style={{margin: '4rem', color: 'white'}}>rachaelcarroll.m@gmail.com</a>  
+                <p>Find me on<span> <a href ='https://www.linkedin.com/in/rachaelcarroll/' target='_blank' rel='noreferrer'>LinkedIn</a> </span>
+                or via email at <span><a href ='mailto:rachaelcarroll.m@gmail.com'>rachaelcarroll.m@gmail.com.</a></span> </p> 
             </Flip>
         </section>
     )

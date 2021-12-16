@@ -1,10 +1,21 @@
 .contact {
     @include flex(column, center);
     min-height: 82vh;
-    color: white;
+    color: $light;
 
     h2 {
         text-align: center;
-        padding: 1rem;
+    }
+
+    p {
+        margin: 5rem;
+    }
+
+    a {
+        color: rgb(186, 183, 183);
+
+        &:hover {
+            color: $teal;
+        }
     }
 }
