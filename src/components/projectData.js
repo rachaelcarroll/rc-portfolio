@@ -90,7 +90,7 @@ export const projectData = [
       {
         name: 'the daily',
         image: daily,
-        summary: 'A daily news reader application, built in just 8 hours',
+        summary: 'A daily news reader application, built in 8 hours',
         tech: 'React | Hooks | Router | SCSS | Netlify | Miro',
         accomplishments: 'An 8 hour React challenge: Consumed the NYTimes API to display, categorize, and search daily news',
         timeline: '1 day',
