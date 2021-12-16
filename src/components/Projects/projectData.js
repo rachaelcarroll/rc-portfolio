@@ -16,8 +16,8 @@ export const projectData = [
       tech: 'React | Router | React Hooks | JavaScript | SCSS | Cypress | REST API | Vercel',
       accomplishments: 'Implemented React Hooks, Router, and CSS animations',
       timeline: '1 week',
-      deployedLink: '',
-      repoLink: '',
+      deployedLink: 'https://the-scene.vercel.app/',
+      repoLink: 'https://github.com/rachaelcarroll/the-scene',
       id: 1
     },
     {
