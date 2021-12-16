@@ -18,9 +18,11 @@
 
 .about-header {
   color: white;
-  margin: 0rem 0rem 0rem 2rem;
+  margin: 0rem 0rem -3.4rem 3rem;
   place-self: baseline; 
-  font-size: 2rem;
+  font-size: 5rem;
+  font-family: 'Parisienne', cursive;
+  z-index: 2;
 }
 
   .headshot-and-bio {
@@ -28,6 +30,7 @@
     @include flex(row, center, start);
     background-color: rgba(247, 213, 184, 0.892);
     box-shadow: $box-shadow;
+    padding: .5rem;
   }
 
   .headshot {
@@ -37,6 +40,11 @@
       height: auto;
       max-width: 15rem;
       box-shadow: $box-shadow;
+    }
+
+    a {
+      margin: 0;
+      padding: 0;
     }
   }
 
@@ -51,12 +59,13 @@
 
   .bio-btns {
     @include flex(row, end);
-    margin: .5rem;
+
   }
+
   .bio-btn {
     @include flex(row, center);
-    margin: 1rem;
-    color: white;
+    margin: 1rem 1rem 0rem 1rem;
+    color: black;
     height: 2rem; 
     width: 7rem; 
 
@@ -77,61 +86,25 @@
 
 
 .tech-container{
-  @include flex(column, center);
-  margin-top: 0.5em;
-  min-height: 50vh;
-  }
+  height: 25vh;
+  min-height: 20vh;
 
-  .tech {
-    @include flex(row, center);
+  button {
+    color: white;
+    border: none;
   }
+}
   
   .tech-icons {
     @include flex(row, space-evenly);
     margin: 1rem;
-    color: white;
   }
 
-
-  .tech-content {
-    margin-left: 4em;
-    font-size: 0.8em;
-    padding: 2em;
-    font-family: 'Noto Sans JP', sans-serif;
-    list-style-type: circle;
-    color: #222831;
-  }
+.tech-specs {
+  text-align: center;
+  font-family: $ff-secondary;
+}
   
-  .tech-header-sub-text{
-    font-size: .75rem;
-    text-align: center;
-    padding: 0.4em 2em 1em 2em;
-  }
-  
-  .frontend, .backend, .design {
-    @include flex(column, center);
-    height: 16rem;
-    box-shadow: 5px -6px 0px rgb(90,88,106);
-    border-radius: 2em;
-    align-self: center;
-    background-color: white;
-    color: #222831;
-    margin: 1em;
-    float: left;
-    font-size: 0.3em;
-  }
-  
-  .tech-header-text {
-    text-align: center;
-    font-size: 1rem;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: bold;
-    color: #222831;
-  }
-
-  .tech-details {
-    @include flex(row, space);
-  }
   
 
   
