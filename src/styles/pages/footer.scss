@@ -1,9 +1,8 @@
 footer {
     @include flex(column, center);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.714);
+    color: $light;
+    background-color: $dark;
     padding: .5rem;
-    // position: absolute;
     bottom: 0;
     width: 100%;
 

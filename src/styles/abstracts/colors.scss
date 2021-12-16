@@ -3,13 +3,12 @@ Abstracts - Colors
 ========================================================================== */
 
 /* === Palette === */
-$color-primary: hsla(0, 0, 98, 1);
-$color-secondary: hsla(185, 100, 23, 1);
-$color-tertiary: hsla(175, 36, 69, 1);
-$color-quaternary: hsla(15, 100, 91, 1);
-$color-quinary: hsla(16, 65, 68, 1);
-$box-shadow: 0 9px 15px -9px #000;
+$teal: rgba(79, 221, 234, 0.54);
+$peach: rgba(247, 213, 184, 0.892);
 
 /* === Neutrals === */
 $light: #ffffff;
 $dark: #000000;
+$background: rgb(41,41,41);
+$dark-grey: rgba(72, 72, 72, 0.529);
+$box-shadow: 0 9px 15px -9px #000;

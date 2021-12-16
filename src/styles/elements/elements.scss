@@ -3,7 +3,7 @@
 ========================================================================== */
 
   html {
-    background: rgb(41,41,41);
+    background: $background;
     width: 100vw;
     height: 100vh;
   }
@@ -11,7 +11,7 @@
   body {
     width: 100%;
     height: 100%;
-    background-color: rgb(41,41,41);
+    background-color: $background;
     min-height: 100vh;
 
   }
@@ -28,33 +28,39 @@
     @include flex(column, around);
     border-radius: 10px;
   }
-  
-  form {
-    @include flex(column, space);
-  }
+
   
   button {
     @include flex(column, center);
     transition: 500ms;
-    border: $color-secondary 1px solid;
+    border: $dark-grey 1px solid;
     border-radius: 3px;
     padding: 0.1rem 0.5rem;
     font-family: $ff-secondary;
-    color: $color-secondary;
+    color: $teal;
     &:hover {
       transition: 500ms;
+      background: $dark-grey;
       border: $light 1.5px solid;
       text-shadow: 0 0 1.5px $light;
-      color: $color-primary;
+      color: $light;
     }
   }
   
   a {
     color: $dark;
+    font-family: $ff-secondary;
   }
 
   h2 {
+    font-family: $ff-primary;
     font-size: $font-size-heading;
+    padding: 0;
+  }
+
+  h3 {
+    font-family: $ff-primary;
+    font-size: $font-size-subheading;
   }
 
   p {

@@ -9,14 +9,14 @@
 .mountain {
   z-index: 2;
   min-width: 100vw;
-  height: 130vh;
+  height: 150vh;
   position: absolute;
   left: 0px;
   bottom: -25px;
 }
 
 .about-header {
-  color: white;
+  color: $light;
   margin: 0rem 0rem -3.4rem 3rem;
   place-self: baseline; 
   font-size: 5rem;
@@ -24,84 +24,72 @@
   z-index: 2;
 }
 
-  .headshot-and-bio {
-    @include mediaQueries(about);
-    @include flex(row, center, flex-start);
-    background-color: rgba(247, 213, 184, 0.892);
+.headshot-and-bio {
+  @include mediaQueries(about);
+  @include flex(row, center, flex-start);
+  background-color: $peach;
+  box-shadow: $box-shadow;
+  padding: .5rem;
+}
+
+.headshot {
+  @include flex(column, center);
+
+  img {
+    height: auto;
+    max-width: 15rem;
     box-shadow: $box-shadow;
-    padding: .5rem;
   }
 
-  .headshot {
-    @include flex(column, center);
-
-    img {
-      height: auto;
-      max-width: 15rem;
-      box-shadow: $box-shadow;
-    }
-
-    a {
-      margin: 0;
-      padding: 0;
-    }
+  a {
+    margin: 0;
+    padding: 0;
   }
+}
 
   .bio-details {
     margin: .5rem;
   }
 
   .bio-text {
-      color: black;
+      color: $dark;
       padding: 1rem 2rem 0rem 2rem;
   }
 
   .bio-btns {
     @include flex(row, flex-end);
-
   }
 
   .bio-btn {
     @include flex(row, center);
     margin: 1rem 1rem 0rem 1rem;
-    color: black;
+    color: $dark;
     height: 2rem; 
     width: 7rem; 
-
-    &::after {
-      background: white;
-    }
-  
-    &:hover {
-      background: rgb(22, 55, 55);
-      color: white;
-      text-decoration: none;
-  
-      &::after {
-        width: 100%;
-      }
-    }
   }
 
 
 .tech-container{
-  height: 25vh;
-  min-height: 20vh;
+  height: 18vh;
+  min-height: 16vh;
 
   button {
-    color: white;
+    color: $light;
     border: none;
+
+    &:hover {
+      background: none;
+    }
   }
 }
   
-  .tech-icons {
-    @include flex(row, space-evenly);
-    margin: 1rem;
-  }
+.tech-icons {
+  @include flex(row, space-evenly);
+  margin: 1rem;
+}
 
 .tech-specs {
   text-align: center;
-  font-family: $ff-secondary;
 }
   
   

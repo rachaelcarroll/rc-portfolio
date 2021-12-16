@@ -4,15 +4,15 @@ Abstracts - Typography
 
 /* === Font Import === */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Parisienne&display=swap');
 
 /* === Defaults === */
-$ff-primary: 'Raleway', sans-serif;
-$ff-secondary: 'Open Sans', sans-serif;
+$ff-primary: 'Merriweather', serif;
+$ff-secondary: 'Raleway', sans-serif;
+;
 
 /* === Font Size === */
-$font-size-heading: clamp(1.5rem, 2vw, 3rem);
-$font-size-subheading: 1rem, 2vw, 2.5rem;     
-$font-size-paragraph: 1rem, 1vw, 2.5rem;
-$font-size-button: 1rem, 1.2vw, 2rem;
-$font-size-icon: 1.5rem, 3vw, 3rem;
+$font-size-heading: clamp(1rem, 3vw, 1.8rem);
+$font-size-subheading: clamp(1rem, 1vw, 1.5rem);
+$font-size-paragraph: clamp(1rem, 1vw, 2.5rem);
+
