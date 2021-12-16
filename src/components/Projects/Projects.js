@@ -1,4 +1,4 @@
-import { Project } from './Project';
+import { ProjectCard } from './ProjectCard';
 import { projectData } from './projectData';
 import Slide from 'react-reveal/Slide';
 
@@ -6,7 +6,7 @@ export const Projects = () => {
 
     const projects = projectData.map(project => {
         return (
-            <Project 
+            <ProjectCard
             key={project.id}
             project={project}
             />

@@ -1,14 +1,12 @@
-import scene from '../images/thescene.png';
-import overlook from '../images/overlook.png';
-import clientell from '../images/clientell.png';
-import onlydevs from '../images/onlydevs.png';
-import portfolio from '../images/portfolio.png'
-import rancid from '../images/rancid.png';
-import ranch from '../images/ranch.png';
-import rosemary from '../images/rosemary.png';
-import daily from '../images/thedaily.png';
-
-
+import scene from '../../images/thescene.png';
+import overlook from '../../images/overlook.png';
+import clientell from '../../images/clientell.png';
+import onlydevs from '../../images/onlydevs.png';
+import portfolio from '../../images/portfolio.png'
+import rancid from '../../images/rancid.png';
+import ranch from '../../images/ranch.png';
+import rosemary from '../../images/rosemary.png';
+import daily from '../../images/thedaily.png';
 
 export const projectData = [
     {

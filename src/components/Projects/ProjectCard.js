@@ -1,7 +1,7 @@
-import github from '../images/github.png';
-import web from '../images/web.png';
+import github from '../../images/github.png';
+import web from '../../images/web.png';
 
-export const Project = ({ project }) => {
+export const ProjectCard = ({ project }) => {
 
     return (
         <article className='project-card'>

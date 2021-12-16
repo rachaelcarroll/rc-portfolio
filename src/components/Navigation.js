@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { Contact } from './Contact';
 import { Home } from './Home';
-import { Projects } from './Projects';
+import { Projects } from './Projects/Projects';
 
 export const Navigation = () => {
     return (
