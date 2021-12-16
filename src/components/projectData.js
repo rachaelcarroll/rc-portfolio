@@ -12,17 +12,6 @@ import daily from '../images/thedaily.png';
 
 export const projectData = [
     {
-      name: 'ClienTell',
-      image: clientell,
-      summary: 'A platform that empowers sex workers to document and share their date experiences',
-      tech: 'GraphQL | ApolloClient | React | Router | Circle CI | JavaScript | SCSS | HTML5 | Cypress | Netlify',
-      accomplishments: 'Self-taught GraphQL and worked on a full-stack team',
-      timeline: '3 weeks',
-      deployedLink: 'https://clientell.netlify.app/',
-      repoLink: 'https://github.com/rachaelcarroll/date-em-rate-em-fe-1',
-      id: 1
-    },
-    {
       name: 'the scene',
       image: scene,
       summary: 'An application that allows a user to shuffle and save amusing conversation starters',
@@ -31,6 +20,17 @@ export const projectData = [
       timeline: '1 week',
       deployedLink: '',
       repoLink: '',
+      id: 1
+    },
+    {
+      name: 'ClienTell',
+      image: clientell,
+      summary: 'A platform that empowers sex workers to document and share their date experiences',
+      tech: 'GraphQL | ApolloClient | React | Router | Circle CI | JavaScript | SCSS | HTML5 | Cypress | Netlify',
+      accomplishments: 'Self-taught GraphQL and worked on a full-stack team',
+      timeline: '3 weeks',
+      deployedLink: 'https://clientell.netlify.app/',
+      repoLink: 'https://github.com/rachaelcarroll/date-em-rate-em-fe-1',
       id: 2
     },
     {
