@@ -1,5 +1,5 @@
-import github from '../../images/github.png';
-import web from '../../images/web.png';
+import { FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export const ProjectCard = ({ project }) => {
 
@@ -13,10 +13,10 @@ export const ProjectCard = ({ project }) => {
                 />
                 <div className='project-card-back'>
                     <div className='project-links' style={{borderBottom: '1px solid white'}}>
-                        <a href={project.repoLink}><img alt='github logo' src={github}/></a>                     
+                        <a href={project.repoLink}><FaGithub style={{color: 'white', fontSize: '2.5rem'}}/></a>                     
                         <h3>{project.name}</h3>
                         {project.deployedLink !== '' && (
-                        <a href={project.deployedLink}><img alt={`${project.name} website icon`} src={web}/></a>
+                        <a href={project.deployedLink}><FaExternalLinkAlt style={{color: 'white', fontSize: '2rem'}} /></a>
                         )}
                     </div>
                     <p className='summary-text'>{project.summary}</p>
