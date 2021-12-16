@@ -52,15 +52,25 @@
     font-family: $ff-secondary;
   }
 
+  h1 {
+    font-family: $ff-secondary;
+    font-size: $font-size-heading;
+    color: $light;
+    text-align: center;
+  }
+
   h2 {
     font-family: $ff-primary;
     font-size: $font-size-heading;
     padding: 0;
+    text-align: center;
   }
 
   h3 {
     font-family: $ff-primary;
     font-size: $font-size-subheading;
+    text-align: center;
+    color: $light;
   }
 
   p {
