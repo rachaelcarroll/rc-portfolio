@@ -18,10 +18,10 @@
     } @else if $justify == space-around {
       align-items: $alignment;
       justify-content: space-around;
-    } @else if $justify == start {
+    } @else if $justify == flex-start {
       align-items: $alignment;
       justify-content: flex-start;
-    } @else if $justify == end {
+    } @else if $justify == flex-end {
       align-items: $alignment;
       justify-content: flex-end;
     }
