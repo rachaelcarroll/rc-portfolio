@@ -1,6 +1,7 @@
 import { HashLink } from 'react-router-hash-link';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import logo from '../images/logo.png';
 
 export const NavBar = () => {
 
@@ -23,8 +24,7 @@ export const NavBar = () => {
     return (
         <section className={navBar ? 'nav-active' : 'nav'}>
             <div className='nav-header'>
-                <h1 className='nav-name'>Rachael Carroll</h1>
-                <p className='nav-title'> | SOFTWARE DEVELOPER </p>
+                <img src={logo}></img>
             </div> 
             <div className='nav-links'>
                 <HashLink smooth to='/#about'>
