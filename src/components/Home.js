@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import { fetchImage } from '../util/apiCalls';
 import mountain from '../images/mountain.png';
 import nightsky from '../images/nightsky.jpg';
+import { tsParticles } from '../config/configParticles';
+import Particles from 'react-tsparticles';
 
 export const Home = () => {
     const [apod, setApod] = useState('');
@@ -17,6 +19,8 @@ export const Home = () => {
     return (
         <>
         <section className='home' style={{backgroundImage: `url(${apod})`, backgroundSize: 'cover', backgroundAttachment: 'fixed'}}>
+            <Particles params={tsParticles} height='100vh' width='100vw'>
+            </Particles>
             <div className='home-bottom'>
                 <img src={ mountain } className='mountain' alt='mountain and sunflower field'/>
             </div>
