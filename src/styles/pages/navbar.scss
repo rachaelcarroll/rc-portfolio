@@ -5,12 +5,9 @@
     background: none;
     top: 0;
     height: 4rem;
-    // transition: all .2s ease-out;
     z-index: 5;
-
-    backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  transition: background 0.25s ease-in-out;
+    backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
 
     /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
   @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
@@ -18,26 +15,6 @@
 
   }
 }
-
-// .nav-active {
-//     @include flex(row, space-between);
-//     @include mediaQueries(nav);
-//     background: none;
-//     position: sticky;
-//     top: 0;
-//     height: 4rem;
-//     transition: all .2s ease-in;
-//     z-index: 5;
-
-//     backdrop-filter: blur(8px);
-//   -webkit-backdrop-filter: blur(8px);
-//   transition: background 0.25s ease-in-out;
-
-//     /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
-//   @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-//     background-color: rgba(100, 100, 100, 0.5);
-//   }
-// }
 
 .navbtn {
     margin: 1rem;
