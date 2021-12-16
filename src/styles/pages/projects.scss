@@ -28,6 +28,7 @@
   
   .project-card:hover .project-card-inner {
     transform: rotateY(180deg);
+    cursor: pointer;
   }
   
   .project-card-front, .project-card-back {
