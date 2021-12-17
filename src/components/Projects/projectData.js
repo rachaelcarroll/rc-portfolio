@@ -32,6 +32,17 @@ export const projectData = [
       id: 2
     },
     {
+      name: 'Rancid Tomatillos',
+      image: rancid,
+      summary: 'A movie browsing application',
+      tech: 'React | React Router | Cypress | JavaScript | CSS3 | HTML5 | Vercel | Miro',
+      accomplishments: 'My inaugural React application!',
+      timeline: '10 days',
+      deployedLink: 'https://rancid-tomatillos-one.vercel.app/',
+      repoLink: 'https://github.com/rachaelcarroll/Rancid-Tomatillos',
+      id: 3
+    },
+    {
       name: 'OnlyDevs',
       image: onlydevs,
       summary: 'A question-answer forum for technical front end development concepts',
@@ -40,7 +51,7 @@ export const projectData = [
       timeline: '10 days',
       deployedLink: 'https://onlydevs.herokuapp.com/',
       repoLink: 'https://github.com/rachaelcarroll/only-devs',
-      id: 3
+      id: 4
     },
     {
       name: 'Portfolio',
@@ -50,17 +61,6 @@ export const projectData = [
       accomplishments: 'Fetched the Astronomy Picture of the Day (APOD) from a NASA endpoint to create home image, Implemented Google Analytics to track site traffic',
       deployedLink: 'https://www.rcarroll.co/',
       repoLink: 'https://github.com/rachaelcarroll/rc-portfolio',
-      id: 4
-    },
-    {
-      name: 'Rancid Tomatillos',
-      image: rancid,
-      summary: 'A movie browsing application',
-      tech: 'React | React Router | Cypress | JavaScript | CSS3 | HTML5 | Vercel | Miro',
-      accomplishments: 'My inaugural React application!',
-      timeline: '10 days',
-      deployedLink: 'https://rancid-tomatillos-one.vercel.app/',
-      repoLink: 'https://github.com/rachaelcarroll/Rancid-Tomatillos',
       id: 5
     },
     {

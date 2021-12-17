@@ -12,16 +12,22 @@ export const ProjectCard = ({ project }) => {
                 src={project.image}
                 />
                 <div className='project-card-back'>
-                    <div className='project-links' style={{borderBottom: '1px solid white'}}>
-                        <a href={project.repoLink}><FaGithub style={{color: 'white', fontSize: '2.5rem'}}/></a>                     
+                    <div className='project-header'>
+                        {/* <a href={project.repoLink}><FaGithub style={{color: 'white', fontSize: '2.5rem'}}/></a>                      */}
                         <h3>{project.name}</h3>
+                        {/* {project.deployedLink !== '' && (
+                        <a href={project.deployedLink}><FaExternalLinkAlt style={{color: 'white', fontSize: '2rem'}} /></a>
+                        )} */}
+                    </div>
+                        <p className='summary-text'>{project.summary}</p>
+                        <p><em>HIGHLIGHTS:</em> <span>{project.accomplishments}</span></p>
+                        <p className='project-text'>{project.tech}</p>
+                    <div className='project-links'>
+                        <a href={project.repoLink}><FaGithub style={{color: 'white', fontSize: '2.5rem'}}/></a>                     
                         {project.deployedLink !== '' && (
                         <a href={project.deployedLink}><FaExternalLinkAlt style={{color: 'white', fontSize: '2rem'}} /></a>
                         )}
                     </div>
-                    <p className='summary-text'>{project.summary}</p>
-                    <p>ACCOMPLISHMENTS: <span className='project-text'>{project.accomplishments}</span></p>
-                    <p className='project-text'>{project.tech}</p>
                 </div>
             </div>
         </article>
