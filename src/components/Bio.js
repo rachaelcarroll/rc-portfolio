@@ -17,6 +17,7 @@ export const Bio = () => {
                         <p className='bio-text'>{about.paragraph1}</p>
                         <p className='bio-text'>{about.paragraph2}</p>
                         <p className='bio-text'>{about.paragraph3}</p>
+                        <p className='bio-text'>{about.paragraph4}</p>
                     </div>
                     </article>
                     </Fade>
