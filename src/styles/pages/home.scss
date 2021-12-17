@@ -10,6 +10,13 @@ canvas {
   position: absolute !important;
 }
 
+.logo {
+  z-index: 10;
+  position: absolute;
+  left: -10px;
+  top: 288px;
+}
+
 .mountain {
   z-index: 2;
   min-width: 100vw;
