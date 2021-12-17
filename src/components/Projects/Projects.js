@@ -15,7 +15,7 @@ export const Projects = () => {
 
     return (
         <>
-        <h1 style={{margin: '4rem 0rem 0rem 0rem'}}>A curated collection of projects that I'm personally proud of, or have helped shape me as a developer.</h1>
+        <h1 className='project-page-header'>A curated collection of projects that I'm personally proud of, or have helped shape me as a developer.</h1>
         <Slide bottom duration={1000} delay={300} distance="0px">
             <section className='project-board'>
                 {projects}
