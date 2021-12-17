@@ -1,7 +1,5 @@
 import Fade from 'react-reveal';
 import { BsBrush, BsCodeSlash, BsTerminal } from 'react-icons/bs';
-// import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
 import { RiOrganizationChart } from "react-icons/ri";
 
 
@@ -9,34 +7,6 @@ export const TechStack = () => {
 
     return (
         <section className='tech-container'>
-        {/* <Fade bottom>
-            <div className='tech-icons'>  
-            <Popup trigger={<button> 
-                <BsCodeSlash style={{fontSize: '4rem', margin: '1rem'}}/>
-            </button>} position="bottom center" on={['hover', 'focus']}>
-                <div className='tech-specs'>
-                    <h3> - Front End - </h3> 
-                    <p>React / JavaScript / TypeScript / HTML5 / SCSS / Cypress </p>
-                </div>
-            </Popup>
-            <Popup trigger={<button> 
-                <BsTerminal style={{fontSize: '4rem', margin: '1rem'}}/>
-            </button>} position="bottom center" on={['hover', 'focus']}>
-                <div className='tech-specs'>
-                    <h3> - Back End - </h3> 
-                    <p>Node.js / Express / PostgreSQL</p>
-                </div>
-            </Popup>
-            <Popup trigger={<button> 
-                <BsBrush style={{fontSize: '4rem', margin: '1rem'}}/>
-            </button>} position="bottom center" on={['hover', 'focus']}>
-                <div className='tech-specs'>
-                    <h3> - Design Tools - </h3> 
-                    <p>Figma / Sketch / Miro / Adobe</p>
-                </div>
-            </Popup>        
-            </div>
-        </Fade> */}
         <Fade bottom>
             <section className='fe-be'>
                 <article className='frontend'>
@@ -68,7 +38,6 @@ export const TechStack = () => {
                 </article>
             </section>
             <section className='design-workflow'>
-
                 <article className='design'>
                     <div className='tech-header-container'>
                         <BsBrush style={{fontSize: '2rem', margin: '1rem', color: 'grey'}}/>
@@ -93,7 +62,6 @@ export const TechStack = () => {
                         <li>Git / Github</li>
                         <li>Github Projects</li>
                         <li>Trello</li>
-                        <li>OOP</li>
                         <li>Agile</li>
                     </ul>
                 </article>
