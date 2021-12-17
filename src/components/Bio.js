@@ -7,7 +7,7 @@ export const Bio = () => {
 
     return (
         <main id='about' className='about'>
-                <Fade bottom duration={1000} delay={300} distance="0px">
+                <Fade top duration={1000} distance='0px'>
                   <h1 className='about-header'>hello</h1>
                 </Fade>
                 <section className='headshot-and-bio'>
@@ -21,13 +21,13 @@ export const Bio = () => {
                     </div>
                     </article>
                     </Fade>
-                    <Fade bottom duration={1000} delay={600} distance="30px">
+                    <Fade bottom duration={1000} delay={600} distance='30px'>
                     <div className='headshot'>
                         <img alt='rachael headshot' src={headshot}/>
                         <div className='bio-btns'>
                             <a
-                            target="_blank"
-                            rel="noreferrer"
+                            target='_blank'
+                            rel='noreferrer'
                             href='https://drive.google.com/file/d/1R7JtGgg4RKQzCGywsf0Lq_EiJcfYbUnk/view?usp=sharing'
                             >
                                 <button className='bio-btn'>

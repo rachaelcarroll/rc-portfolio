@@ -19,7 +19,7 @@ export const Projects = () => {
         <Fade top>
             <h1 className='project-page-header'>A curated collection of projects that I'm personally proud of, or have helped shape me as a developer.</h1>
         </Fade>
-        <Slide bottom duration={1000} delay={300} distance="0px">
+        <Slide bottom duration={1500} delay={200} distance='0px'>
             <section className='project-board'>
                 {projects}
             </section>
