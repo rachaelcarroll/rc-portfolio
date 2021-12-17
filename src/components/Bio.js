@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import Fade from 'react-reveal/Fade';
 import { about } from '../util/aboutMe';
+import Fade from 'react-reveal/Fade';
 import headshot from '../images/headshot.jpeg'
 
 export const Bio = () => {
