@@ -9,7 +9,7 @@
     width: 100%;
     height: 100%;
     perspective: 1000px; 
-    min-height: 24rem;
+    min-height: 26rem;
   }
   
   .project-card-inner {
@@ -41,7 +41,7 @@
   }
   
   .project-card-back {
-    padding: 1rem;
+    padding: 1rem 0rem 0rem 0rem;
     background-color: $dark-grey;
     color: $light;
     transform: rotateY(180deg);
@@ -56,11 +56,8 @@
     }
   }
   
-  .project-links {
-      @include flex(row, space-between);
-      align-self: flex-end;
-
-      margin: 0rem 5rem 0rem 5rem;
+  .project-header {
+      border-bottom: 1px solid $light;
 
     img {
         height: 2.5rem;
@@ -69,3 +66,15 @@
     }
   }
 
+  .project-text {
+    border-top: 2px solid $dark; 
+    padding-top: 1rem;
+  }
+
+  .project-links {
+    @include flex(row, center);
+
+    a {
+      margin: 0rem 1rem 0rem 1rem;
+    }
+  }
