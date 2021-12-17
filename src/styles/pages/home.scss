@@ -11,13 +11,16 @@ canvas {
 }
 
 .logo {
+  @include mediaQueries(logo);
   z-index: 3;
   position: absolute;
   left: -10px;
-  top: 363px;
+  top: 325px;
+  width: 35rem;
 }
 
 .mountain {
+  @include mediaQueries(mountain);
   z-index: 2;
   min-width: 100vw;
   height: 150vh;
@@ -84,17 +87,17 @@ canvas {
 .tech-container {
   @include flex(row, center);
   @include mediaQueries(tech);
-  min-height: 40vh;
-  width: 100wv;
-  margin: .5rem;
+  width: 100vw;
+  margin: 0rem;
 
   article {
     @include flex(column, center);
     background: $light;
     text-align: center;
-    width: 17rem;
-    height: 20rem;
-    margin: 1rem;
+    width: 50%;
+    height: 100%;
+    min-height: 20rem;
+    margin: 0.8rem;    
     box-shadow: $box-shadow;
   }
 }
@@ -117,15 +120,12 @@ canvas {
   padding: 0rem .5rem 0rem .5rem;
 }
 
-.fe-be {
+.fe-be, .design-workflow {
   @include flex(row, center);
   @include mediaQueries(card);
+  margin: 0rem;
 }
 
-.design-workflow {
-  @include flex(row, center);
-  @include mediaQueries(card);
-}
 
 
 

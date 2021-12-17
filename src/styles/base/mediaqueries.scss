@@ -26,8 +26,13 @@ Base - Media Queries
         @include flex(column, center);
       } @else if $property==card {
         @include flex(column, center);
+      } @else if $property==logo {
+        width: 20rem;
+        left: -10px;
+        top: 450px;
+      } @else if $property==mountain {
+        height: 100vh;
       } 
-      
     }
   }
   
@@ -48,6 +53,12 @@ Base - Media Queries
         @include flex(column, center);
       } @else if $property==card {
         @include flex(row, center);
+      } @else if $property==logo {
+        width: 25rem;
+        left: -10px;
+        top: 400px;
+      } @else if $property==mountain {
+        height: 125vh;
       } 
     }
   }
@@ -69,6 +80,12 @@ Base - Media Queries
         @include flex(row, center);
       } @else if $property==card {
         @include flex(row, center);
+      } @else if $property==logo {
+        width: 35rem;
+        left: -10px;
+        top: 325px;
+      } @else if $property==mountain {
+        height: 150vh;
       } 
     }
   }
