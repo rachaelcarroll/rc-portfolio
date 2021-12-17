@@ -6,8 +6,7 @@ export const Contact = () => {
     return (
         <section className='contact'>
             <Flip left cascade>
-            <h2>Let’s start a conversation.</h2>
-            <h2>Who knows, it could lead to the next great idea.</h2>
+            <h2>Let’s start a conversation.<br></br>Who knows, it could lead to the next great idea.</h2>
             </Flip>
 
             <Flip left cascade delay={800}>
