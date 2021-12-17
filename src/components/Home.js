@@ -6,6 +6,8 @@ import mountain from '../images/mountain.png';
 import nightsky from '../images/nightsky.jpg';
 import { tsParticles } from '../config/configParticles';
 import Particles from 'react-tsparticles';
+import logo from '../images/logo.png';
+import Fade from 'react-reveal/Fade'; 
 
 export const Home = () => {
     const [apod, setApod] = useState('');
@@ -24,9 +26,12 @@ export const Home = () => {
             <div className='home-bottom'>
                 <img src={ mountain } className='mountain' alt='mountain and sunflower field'/>
             </div>
+            <Fade left delay={800}>
+            <img className='logo' src={logo}></img>
+            </Fade>
         </section>
         <Bio />
-        <TechStack/>
+        <TechStack />
         </>
     )
 }
