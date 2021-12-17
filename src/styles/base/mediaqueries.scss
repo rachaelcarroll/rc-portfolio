@@ -19,7 +19,7 @@ Base - Media Queries
       } @else if $property==about {
         @include flex(column-reverse, center);
       } @else if $property==nav {
-        @include flex(column, center);
+        @include flex(column, flex-end);
       } @else if $property==header {
         margin: 2.5rem 0rem -1rem 0rem;
       } 
@@ -37,7 +37,7 @@ Base - Media Queries
       } @else if $property==about {
         @include flex(row, center, flex-start);
       } @else if $property==nav {
-        @include flex(row, space-between);
+        @include flex(row, flex-end);
       } @else if $property==header {
         margin: 0rem;
       } 
@@ -54,7 +54,7 @@ Base - Media Queries
       } @else if $property==about {
         @include flex(row, center, flex-start);
       } @else if $property==nav {
-        @include flex(row, space-between);
+        @include flex(row, flex-end);
       } @else if $property==header {
         margin: 0rem;
       } 
