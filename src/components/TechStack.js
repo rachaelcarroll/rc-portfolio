@@ -17,14 +17,14 @@ export const TechStack = () => {
                     <p>React / JavaScript / TypeScript / HTML5 / SCSS / Cypress </p>
                 </div>
             </Popup>
-            {/* <Popup trigger={<button> 
+            <Popup trigger={<button> 
                 <BsTerminal style={{fontSize: '4rem', margin: '1rem'}}/>
             </button>} position="bottom center" on={['hover', 'focus']}>
                 <div className='tech-specs'>
                     <h3> - Back End - </h3> 
                     <p>Node.js / Express / PostgreSQL</p>
                 </div>
-            </Popup> */}
+            </Popup>
             <Popup trigger={<button> 
                 <BsBrush style={{fontSize: '4rem', margin: '1rem'}}/>
             </button>} position="bottom center" on={['hover', 'focus']}>
