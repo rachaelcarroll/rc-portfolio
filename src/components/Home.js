@@ -27,7 +27,7 @@ export const Home = () => {
                 <img src={ mountain } className='mountain' alt='mountain and sunflower field'/>
             </div>
             <Fade left delay={800}>
-            <img className='logo' src={logo}></img>
+            <img className='logo' src={logo} alt='rachael logo'></img>
             </Fade>
         </section>
         <Bio />
