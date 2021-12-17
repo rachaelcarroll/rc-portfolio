@@ -119,12 +119,12 @@ canvas {
 
 .fe-be {
   @include flex(row, center);
-  @include mediaQueries(tech);
+  @include mediaQueries(card);
 }
 
 .design-workflow {
   @include flex(row, center);
-  @include mediaQueries(tech);
+  @include mediaQueries(card);
 }
 
 

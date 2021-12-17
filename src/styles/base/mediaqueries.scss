@@ -24,6 +24,8 @@ Base - Media Queries
         margin: 2.5rem 0rem -1rem 0rem;
       } @else if $property==tech {
         @include flex(column, center);
+      } @else if $property==card {
+        @include flex(column, center);
       } 
       
     }
@@ -44,6 +46,8 @@ Base - Media Queries
         margin: 0rem;
       } @else if $property==tech {
         @include flex(column, center);
+      } @else if $property==card {
+        @include flex(row, center);
       } 
     }
   }
@@ -62,6 +66,8 @@ Base - Media Queries
       } @else if $property==header {
         margin: 0rem;
       } @else if $property==tech {
+        @include flex(row, center);
+      } @else if $property==card {
         @include flex(row, center);
       } 
     }
