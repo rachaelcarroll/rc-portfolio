@@ -5,7 +5,7 @@ export const ProjectCard = ({ project }) => {
 
     return (
         <article className='project-card'>
-            <div class='project-card-inner'>
+            <div className='project-card-inner'>
                 <img
                 className='project-card-front'
                 alt='project preview'

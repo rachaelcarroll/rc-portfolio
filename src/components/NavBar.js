@@ -5,14 +5,13 @@ export const NavBar = () => {
 
     const location = useLocation().pathname
 
-
     return (
         <section className='nav'>
             <div className='nav-links'>
                 <NavLink to='/#about' className={`${location === '/#about'} && 'active'`}>
-                <HashLink smooth to='/#about'>
-                    <p className='navbtn'>about</p>
-                </HashLink>
+                    <HashLink smooth to='/#about'>
+                        <p className='navbtn'>about</p>
+                    </HashLink>
                 </NavLink>
                 <NavLink to='/projects' className={`${location === '/projects'} && 'active'`}>
                     <p className='navbtn'>portfolio</p>

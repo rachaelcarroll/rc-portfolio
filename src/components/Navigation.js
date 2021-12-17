@@ -4,6 +4,7 @@ import { Home } from './Home';
 import { Projects } from './Projects/Projects';
 
 export const Navigation = () => {
+    
     return (
         <Routes>
             <Route exact path='/' element={<Home />}/>

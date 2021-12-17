@@ -4,7 +4,7 @@ import { about } from '../util/aboutMe';
 import headshot from '../images/headshot.jpeg'
 
 export const Bio = () => {
-
+    
     return (
         <main id='about' className='about'>
                 <Fade top duration={1000} distance='0px'>
