@@ -1,9 +1,9 @@
 .home {
-    @include flex(column, center);
-    height: 100vh;
-    margin-bottom: 2rem;
-    padding: 0;
-    position: relative;
+  @include flex(column, center);
+  height: 100vh;
+  margin-bottom: 2rem;
+  padding: 0;
+  position: relative;
 }
 
 canvas {
@@ -63,8 +63,8 @@ canvas {
   }
 
   .bio-text {
-      color: $dark;
-      padding: 1rem 2rem 0rem 2rem;
+    color: $dark;
+    padding: 1rem 2rem 0rem 2rem;
   }
 
   .bio-btns {
@@ -77,32 +77,56 @@ canvas {
     color: $dark;
     height: 2rem; 
     width: 7rem; 
+    overflow-y: hidden;
   }
 
 
-.tech-container{
-  height: 18vh;
-  min-height: 16vh;
+.tech-container {
+  @include flex(row, center);
+  @include mediaQueries(tech);
+  min-height: 40vh;
+  width: 100wv;
+  margin: .5rem;
 
-  button {
-    color: $light;
-    border: none;
-
-    &:hover {
-      background: none;
-    }
+  article {
+    @include flex(column, center);
+    background: $light;
+    text-align: center;
+    width: 17rem;
+    height: 20rem;
+    margin: 1rem;
+    box-shadow: $box-shadow;
   }
 }
-  
-.tech-icons {
-  @include flex(row, space-evenly);
-  margin: 1rem;
+
+.tech-content {
+  padding: .5rem;
+  margin: .5rem;
+  text-align: left;
+  font-family: $ff-secondary;
+  font-size: $font-size-paragraph;
 }
 
-.tech-specs {
-  text-align: center;
+.tech-header-container {
+  @include flex(column, center);
+  border-bottom: 1px solid $dark-grey;
+  margin: 0rem 0rem .5rem 0rem;
 }
-  
-  
+
+.tech-header-sub-text {
+  padding: 0rem .5rem 0rem .5rem;
+}
+
+.fe-be {
+  @include flex(row, center);
+  @include mediaQueries(tech);
+}
+
+.design-workflow {
+  @include flex(row, center);
+  @include mediaQueries(tech);
+}
+
+
 
   

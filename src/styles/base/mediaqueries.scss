@@ -22,6 +22,8 @@ Base - Media Queries
         @include flex(column, flex-end);
       } @else if $property==header {
         margin: 2.5rem 0rem -1rem 0rem;
+      } @else if $property==tech {
+        @include flex(column, center);
       } 
       
     }
@@ -40,6 +42,8 @@ Base - Media Queries
         @include flex(row, flex-end);
       } @else if $property==header {
         margin: 0rem;
+      } @else if $property==tech {
+        @include flex(column, center);
       } 
     }
   }
@@ -57,6 +61,8 @@ Base - Media Queries
         @include flex(row, flex-end);
       } @else if $property==header {
         margin: 0rem;
+      } @else if $property==tech {
+        @include flex(row, center);
       } 
     }
   }
