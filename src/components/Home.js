@@ -2,12 +2,12 @@ import { Bio } from './Bio';
 import { TechStack } from './TechStack'
 import { useState, useEffect } from 'react';
 import { fetchImage } from '../util/apiCalls';
-import mountain from '../images/mountain.png';
-import nightsky from '../images/nightsky.jpg';
 import { tsParticles } from '../config/configParticles';
 import Particles from 'react-tsparticles';
-import logo from '../images/logo.png';
 import Fade from 'react-reveal/Fade'; 
+import mountain from '../images/mountain.png';
+import nightsky from '../images/nightsky.jpg';
+import logo from '../images/logo.png';
 
 export const Home = () => {
     const [apod, setApod] = useState('');
