@@ -21,7 +21,7 @@ View the deployed site, [here.](https://www.rcarroll.co/)
 
     "react-icons": "^4.3.1",
     "react-reveal": "^1.2.2",
-    "reactjs-popup": "^2.0.5"
+    "react-tsparticles": "^1.37.5"
 
 
 ### Author
