@@ -21,10 +21,9 @@ export const TechStack = () => {
             </p>
             <ul className="tech-content">
               <li>React</li>
-              <li>Javascript</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
               <li>HTML / SCSS</li>
-              <li>Cypress</li>
-              <li>ApolloClient</li>
             </ul>
           </article>
           <article className="backend">
@@ -43,8 +42,8 @@ export const TechStack = () => {
               <li>Node</li>
               <li>PostgreSQL</li>
               <li>RESTful APIs</li>
-              <li>GraphQL</li>
-              <li>Ruby / Rails *currently learning*</li>
+              <li>Ruby / Rails</li>
+              <li>C# / .NET</li>
             </ul>
           </article>
         </section>
