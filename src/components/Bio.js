@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { about } from '../util/aboutMe';
 import Fade from 'react-reveal/Fade';
 import headshot from '../images/headshot.jpeg'
+import resume from '../util/rachael-carroll.pdf'
 
 export const Bio = () => {
     
@@ -25,15 +26,16 @@ export const Bio = () => {
                     <div className='headshot'>
                         <img alt='rachael headshot' src={headshot}/>
                         <div className='bio-btns'>
-                            <a
-                            target='_blank'
-                            rel='noreferrer'
-                            href='https://drive.google.com/file/d/1fW1NMSusC3WvCyY038RSL1jDOEoPzjfY/view?usp=sharing'
+                            <Link
+                                to={resume}
+                                download="rachael-carroll"
+                                target="_blank"
+                                rel="noreferrer"
                             >
                                 <button className='bio-btn'>
                                     resume
                                 </button>
-                            </a>
+                            </Link>
                             <Link to='/contact'>
                              <button
                              className='bio-btn'>
