@@ -21,17 +21,17 @@ export const tsParticles = {
         }
       },
       "opacity": {
-        "value": 1,
+        "value": .5,
         "random": true,
         "anim": {
           "enable": true,
-          "speed": 1,
+          "speed": .5,
           "opacity_min": 0,
           "sync": false
         }
       },
       "size": {
-        "value": 1.5,
+        "value": 2,
         "random": true,
         "anim": {
           "enable": true,
@@ -41,7 +41,7 @@ export const tsParticles = {
         }
       },
       "line_linked": {
-        "enable": false,
+        "enable": true,
         "distance": 10,
         "color": "#ffffff",
         "opacity": 0.4,
@@ -66,7 +66,7 @@ export const tsParticles = {
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": false,
+          "enable": true,
           "mode": "bubble"
         },
         "onclick": {

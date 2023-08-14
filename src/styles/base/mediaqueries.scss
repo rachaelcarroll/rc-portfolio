@@ -46,7 +46,7 @@ Base - Media Queries
       } @else if $property==about {
         @include flex(row, center, flex-start);
       } @else if $property==nav {
-        @include flex(row, flex-end);
+        @include flex(row, space-between);
       } @else if $property==header {
         margin: 0rem;
       } @else if $property==tech {
@@ -73,7 +73,7 @@ Base - Media Queries
       } @else if $property==about {
         @include flex(row, center, flex-start);
       } @else if $property==nav {
-        @include flex(row, flex-end);
+        @include flex(row, space-between);
       } @else if $property==header {
         margin: 0rem;
       } @else if $property==tech {

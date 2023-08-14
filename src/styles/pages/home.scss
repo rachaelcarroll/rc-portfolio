@@ -7,21 +7,20 @@
 }
 
 canvas {
+  z-index: 2 !important;
   position: absolute !important;
 }
 
 .logo {
   @include mediaQueries(logo);
   z-index: 3;
-  position: absolute;
-  left: -10px;
-  top: 325px;
+  top: 0;
   width: 35rem;
 }
 
 .mountain {
   @include mediaQueries(mountain);
-  z-index: 2;
+  z-index: 1;
   min-width: 100vw;
   height: 150vh;
   position: absolute;

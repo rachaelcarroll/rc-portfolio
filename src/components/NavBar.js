@@ -1,5 +1,7 @@
 import { HashLink } from 'react-router-hash-link';
 import { NavLink, useLocation } from 'react-router-dom';
+import Fade from "react-reveal/Fade";
+import logo from "../images/logo.png";
 
 export const NavBar = () => {
 
@@ -7,14 +9,14 @@ export const NavBar = () => {
 
     return (
         <section className='nav'>
+            <Fade left delay={800}>
+                <img className="logo" src={logo} alt="rachael logo"></img>
+            </Fade>
             <div className='nav-links'>
                 <NavLink to='/#about' className={`${location === '/#about'} && 'active'`}>
                     <HashLink smooth to='/#about'>
                         <p className='navbtn'>about</p>
                     </HashLink>
-                </NavLink>
-                <NavLink to='/projects' className={`${location === '/projects'} && 'active'`}>
-                    <p className='navbtn'>portfolio</p>
                 </NavLink>
                 <NavLink to='/contact'>
                     <p className={`navbtn : ${location === '/contact'} && 'active'`}>contact</p>

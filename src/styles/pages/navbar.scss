@@ -1,5 +1,5 @@
 .nav {
-    @include flex(row, flex-end);
+    @include flex(row, space-between);
     @include mediaQueries(nav);
     position: sticky;
     background: none;

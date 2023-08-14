@@ -4,10 +4,8 @@ import { useState, useEffect } from "react";
 import { fetchImage } from "../util/apiCalls";
 import { tsParticles } from "../config/configParticles";
 import Particles from "react-tsparticles";
-import Fade from "react-reveal/Fade";
 import mountain from "../images/mountain.png";
 import nightsky from "../images/nightsky.jpg";
-import logo from "../images/logo.png";
 
 export const Home = () => {
   const [apod, setApod] = useState("");
@@ -25,13 +23,14 @@ export const Home = () => {
         style={{
           backgroundImage: `url(${apod})`,
           backgroundSize: "cover",
-          backgroundAttachment: "fixed",
+          backgroundAttachment: "fixed"
         }}
       >
         <Particles
           params={tsParticles}
           height="100vh"
           width="100vw"
+          zIndex="2"
         ></Particles>
         <div className="home-bottom">
           <img
@@ -40,9 +39,6 @@ export const Home = () => {
             alt="mountain and sunflower field"
           />
         </div>
-        <Fade left delay={800}>
-          <img className="logo" src={logo} alt="rachael logo"></img>
-        </Fade>
       </section>
       <Bio />
       <TechStack />
