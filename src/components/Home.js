@@ -1,3 +1,4 @@
+import React  from 'react';
 import { Bio } from "./Bio";
 import { TechStack } from "./TechStack";
 import { useState, useEffect } from "react";

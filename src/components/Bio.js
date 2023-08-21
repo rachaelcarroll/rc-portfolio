@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { about } from '../util/aboutMe';
+import React  from 'react';
 import Fade from 'react-reveal/Fade';
 import headshot from '../images/headshot.jpeg'
 import resume from '../util/rachael-carroll.pdf'

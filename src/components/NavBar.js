@@ -1,3 +1,4 @@
+import React  from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { NavLink, useLocation } from 'react-router-dom';
 import Fade from "react-reveal/Fade";

@@ -1,3 +1,4 @@
+import React  from 'react';
 import Fade from "react-reveal";
 import { BsBrush, BsCodeSlash, BsTerminal } from "react-icons/bs";
 import { RiOrganizationChart } from "react-icons/ri";

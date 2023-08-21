@@ -1,3 +1,4 @@
+import React  from 'react';
 import { ProjectCard } from './ProjectCard';
 import { projectData } from './projectData';
 import Slide from 'react-reveal/Slide';
