@@ -4,6 +4,7 @@
     color: $light;
 
     h2 {
+        font-size: 55px;
         margin: 0rem 6rem 0rem 6rem;
     }
 
@@ -21,3 +22,12 @@
     
     }
 }
+
+.resume {
+    @include flex(row, center);
+    margin: 1rem 1rem 0rem 1rem;
+    color: $light;
+    height: 2rem; 
+    width: 10rem; 
+    overflow-y: hidden;
+  }
