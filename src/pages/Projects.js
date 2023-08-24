@@ -1,6 +1,6 @@
 import React  from 'react';
-import { ProjectCard } from './ProjectCard';
-import { projectData } from './projectData';
+import { ProjectCard } from '../components/Projects/ProjectCard';
+import { projectData } from '../components/Projects/projectData';
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 

@@ -13,16 +13,6 @@ export const NavBar = () => {
             <Fade left delay={800}>
                 <img className="logo" src={logo} alt="rachael logo"></img>
             </Fade>
-            <div className='nav-links'>
-                <NavLink to='/#about' className={`${location === '/#about'} && 'active'`}>
-                    <HashLink smooth to='/#about'>
-                        <p className='navbtn'>about</p>
-                    </HashLink>
-                </NavLink>
-                <NavLink to='/contact'>
-                    <p className={`navbtn : ${location === '/contact'} && 'active'`}>contact</p>
-                </NavLink>
-            </div> 
         </section>
     )
 }

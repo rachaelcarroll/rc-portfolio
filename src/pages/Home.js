@@ -1,6 +1,7 @@
 import React  from 'react';
 import { Bio } from "./Bio";
-import { TechStack } from "./TechStack";
+import { TechStack } from "../components/TechStack";
+import { Contact } from "./Contact";
 import { useState, useEffect } from "react";
 import { fetchImage } from "../util/apiCalls";
 import { tsParticles } from "../config/configParticles";
@@ -43,6 +44,7 @@ export const Home = () => {
       </section>
       <Bio />
       <TechStack />
+      <Contact />
     </>
   );
 };
