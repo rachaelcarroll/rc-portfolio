@@ -1,20 +1,18 @@
 .contact {
     @include flex(column, center);
-    min-height: 82vh;
+    background-color: $dark;
     color: $light;
 
     h2 {
         font-size: 55px;
         margin: 0rem 6rem 0rem 6rem;
-    }
-
-    p {
-        margin: 5rem 0rem 0rem 0rem;
-        text-align: center;
+        line-height: initial;
     }
 
     a {
-        color: rgb(158, 216, 216);
+        z-index: 5;
+        color: $light-teal;
+        margin-bottom: 20px;
 
         &:hover {
             color: rgb(250, 250, 250);
@@ -30,4 +28,5 @@
     height: 2rem; 
     width: 10rem; 
     overflow-y: hidden;
+    z-index: 5;
   }

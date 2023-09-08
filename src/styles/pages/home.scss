@@ -1,8 +1,4 @@
 .home {
-  @include flex(column, center);
-  height: 100vh;
-  margin-bottom: 2rem;
-  padding: 0;
   position: relative;
 }
 
@@ -23,69 +19,52 @@ canvas {
   z-index: 1;
   min-width: 100vw;
   height: 150vh;
-  position: absolute;
-  left: 0px;
-  bottom: -25px;
 }
 
-.mountain:after {
-  content:""; 
-  position: absolute; 
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
-  height: 40%;  
+.about {
+  @include flex(column, center);
+  background-color: $dark;
+  padding-bottom: 20px;
 }
 
 .about-header {
   @include flex(row, center);
-  place-self: baseline; 
+  width: 100%;
 }
 
 .about-text {
   color: $light;
-  margin: 0rem 0rem -3.4rem 4rem;
   font-size: 5rem;
   font-family: 'Parisienne', cursive;
   z-index: 2;
 }
 
-.headshot-and-bio {
+.bio {
   @include mediaQueries(about);
   @include flex(row, center, flex-start);
-  background-color: $peach;
+  background-color: $dark;
+  color: $light;
   box-shadow: $box-shadow;
   padding: .5rem;
+  margin-top: -20px;
+  z-index: 5;
 }
 
-.headshot {
-  @include flex(column, center);
+.bio-text {
+  margin: 0px 30px 0px 30px;
+}
 
-  img {
-    height: auto;
-    max-width: 15rem;
-    box-shadow: $box-shadow;
-  }
+.bio-link {
+  color: $light-teal;
 
-  a {
-    margin: 0;
-    padding: 0;
+  &:hover {
+    color: $light;
   }
 }
 
-  .bio-details {
-    margin: .5rem;
-  }
-
-  .bio-text {
-    color: $dark;
-    padding: 1rem 2rem 0rem 2rem;
-  }
-
-  .bio-btns {
-    @include flex(row, flex-end);
-  }
+.bio-btns {
+  @include flex(row, flex-end);
+}
 
 .tech-container {
   @include flex(row, center);
@@ -95,17 +74,25 @@ canvas {
 
   article {
     @include flex(column, center);
-    background: $light;
+    background: $dark;
     text-align: center;
     width: 80%;
     height: 100%;
     min-height: 20rem;
     margin: 0.8rem;    
-    box-shadow: $box-shadow;
+    border-width: 2px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        $light-teal, 
+        rgba(0, 0, 0, 0)
+      ) 1 100%;
   }
 }
 
 .tech-content {
+  color: $light-teal;
   padding: .5rem;
   margin: .5rem;
   text-align: left;
@@ -115,11 +102,13 @@ canvas {
 
 .tech-header-container {
   @include flex(column, center);
-  border-bottom: 1px solid $dark-grey;
+  border-bottom: 1px solid $light-grey;
   margin: 0rem 0rem .5rem 0rem;
+  color: $light-grey;
 }
 
 .tech-header-sub-text {
+  color: $light-teal;
   padding: 0rem .5rem 0rem .5rem;
 }
 
