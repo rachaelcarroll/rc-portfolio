@@ -7,7 +7,7 @@ export const techData = [
     {
         type: "Frontend",
         logo: <BsCodeSlash style={iconStyle} />,
-        summary: "I value an intuitive user experience and reliable, captivating features.",
+        summary: "I value a reliable, engaging, and intuitive user experience and scalable clean code.",
         stack: ["React", "TypeScript", "JavaScript", "HTML / CSS"]
     },
     {
@@ -25,7 +25,7 @@ export const techData = [
     {
         type: "Design",
         logo: <BsBrush style={iconStyle} />,
-        summary: "Design is creativity and I love the beginnings of an application.",
+        summary: "I love using design to bring ideas to life!",
         stack: ["Figma", "Miro", "Sketch", "Adobe Creative Suite"]
     }
 ]
