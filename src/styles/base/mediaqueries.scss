@@ -27,7 +27,7 @@ Base - Media Queries
       } @else if $property==card {
         @include flex(column, center);
       } @else if $property==logo {
-        width: 20rem;
+        width: 22rem;
         left: -10px;
         top: 450px;
       } @else if $property==mountain {

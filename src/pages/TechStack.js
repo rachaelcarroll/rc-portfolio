@@ -2,16 +2,28 @@ import React  from 'react';
 import Fade from "react-reveal";
 import { BsBrush, BsCodeSlash, BsTerminal } from "react-icons/bs";
 import { RiOrganizationChart } from "react-icons/ri";
+import { techData } from "../util/techData";
+import { TechCard } from "../components/TechCard";
 
 export const TechStack = () => {
   return (
     <section className="tech-container">
       <Fade bottom>
         <section className="fe-be">
+          {/* {techData.map(data => 
+          (
+            <TechCard 
+              type={data.type} 
+              logo={data.logo} 
+              summary={data.summary}
+              stack={data.stack}
+            />
+          )
+          )} */}
           <article className="frontend">
             <div className="tech-header-container">
               <BsCodeSlash
-                style={{ fontSize: "2rem", margin: "1rem", color: "grey" }}
+                style={{ fontSize: "2rem", margin: "1rem", color: "lightgrey" }}
               />
               <h3 className="tech-header-text">Frontend</h3>
             </div>
@@ -22,15 +34,15 @@ export const TechStack = () => {
             </p>
             <ul className="tech-content">
               <li>React</li>
-              <li>JavaScript</li>
               <li>TypeScript</li>
-              <li>HTML / SCSS</li>
+              <li>JavaScript</li>
+              <li>HTML / CSS</li>
             </ul>
-          </article>
+          </article> 
           <article className="backend">
             <div className="tech-header-container">
               <BsTerminal
-                style={{ fontSize: "2rem", margin: "1rem", color: "grey" }}
+                style={{ fontSize: "2rem", margin: "1rem", color: "lightgrey" }}
               />
               <h3 className="tech-header-text">Backend</h3>
             </div>
@@ -52,7 +64,7 @@ export const TechStack = () => {
           <article className="work-flow">
             <div className="tech-header-container">
               <RiOrganizationChart
-                style={{ fontSize: "2rem", margin: "1rem", color: "grey" }}
+                style={{ fontSize: "2rem", margin: "1rem", color: "lightgrey" }}
               />
               <h3 className="tech-header-text">Systems and Workflow</h3>
             </div>
@@ -71,7 +83,7 @@ export const TechStack = () => {
           <article className="design">
             <div className="tech-header-container">
               <BsBrush
-                style={{ fontSize: "2rem", margin: "1rem", color: "grey" }}
+                style={{ fontSize: "2rem", margin: "1rem", color: "lightgrey" }}
               />
               <h3 className="tech-header-text">Design</h3>
             </div>
