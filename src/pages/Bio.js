@@ -27,7 +27,7 @@ export const Bio = () => {
                                 </>
                             )}
                         )}
-                        <p className="bio-text">Oh, and the space background you're seeing is actually being pulled from a <span><a className="bio-link" href="https://data.nasa.gov/Space-Science/Astronomy-Picture-of-the-Day-API/ez2w-t8ua">NASA API</a></span>, so come on back tomorrow to see a different view!</p>
+                        <p className="bio-text">Oh, and the space background you're seeing is actually being pulled from this <span><a className="bio-link" href="https://data.nasa.gov/Space-Science/Astronomy-Picture-of-the-Day-API/ez2w-t8ua">NASA API</a></span>. It changes daily, so come on back tomorrow to see a different view!</p>
                     </div>
                     </article>
                     </Fade>
