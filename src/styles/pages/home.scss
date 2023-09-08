@@ -67,28 +67,8 @@ canvas {
 }
 
 .tech-container {
-  @include flex(row, center);
-  @include mediaQueries(tech);
   width: 100vw;
   margin: 0rem;
-
-  article {
-    @include flex(column, center);
-    background: $dark;
-    text-align: center;
-    width: 80%;
-    height: 100%;
-    min-height: 20rem;
-    margin: 0.8rem;    
-    border-width: 2px;
-    border-style: solid;
-    border-image: 
-      linear-gradient(
-        to bottom, 
-        $light-teal, 
-        rgba(0, 0, 0, 0)
-      ) 1 100%;
-  }
 }
 
 .tech-content {
@@ -112,10 +92,28 @@ canvas {
   padding: 0rem .5rem 0rem .5rem;
 }
 
-.fe-be, .design-workflow {
-  @include flex(row, center);
-  @include mediaQueries(card);
-  margin: 0rem;
+.fe-be {
+  @include mediaQueries(grid);
+}
+
+.card {
+  @include flex(column, center);
+    background: $dark;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    min-height: 20rem;
+    max-height: 300px;
+    min-width: 300px;
+    margin: 0.8rem;    
+    border-width: 2px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        $light-teal, 
+        rgba(0, 0, 0, 0)
+      ) 1 100%;
 }
 
 .emoji {

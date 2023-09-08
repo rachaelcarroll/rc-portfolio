@@ -2,11 +2,9 @@ import React  from 'react';
 
 export const TechCard = ({type, logo, summary, stack}) => {
     return (
-        <article className={type}>
+        <article className="card">
             <div className="tech-header-container">
-              {/* <{logo}
-                style={{ fontSize: "2rem", margin: "1rem", color: "lightgrey" }}
-              /> */}
+              {logo}
               <h3 className="tech-header-text">{type}</h3>
             </div>
             <p className="tech-header-sub-text">
@@ -14,11 +12,9 @@ export const TechCard = ({type, logo, summary, stack}) => {
               {summary}{" "}
             </p>
             <ul className="tech-content">
-              {stack.map(tech => {
-                  (
-                    <li>{tech}</li>
+              {stack.map(tech => (
+                    <li key={tech}>{tech}</li>
                   )
-              }
               )}
             </ul>
           </article>

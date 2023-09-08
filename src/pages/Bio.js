@@ -1,4 +1,4 @@
-import React  from 'react';
+import React, {Fragment }  from 'react';
 import { about } from '../util/aboutMe';
 import Fade from 'react-reveal/Fade';
 import { Emoji } from '../components/Emoji';
@@ -21,10 +21,10 @@ export const Bio = () => {
                     <div className="bio-details">
                         {about.map(paragraph => {
                             return (
-                                <>
-                                <p className="bio-text">{paragraph}</p>
-                                <br></br> 
-                                </>
+                                <Fragment key={paragraph}>
+                                    <p className="bio-text">{paragraph}</p>
+                                    <br></br> 
+                                </Fragment >
                             )}
                         )}
                         <p className="bio-text">Oh, and the space background you're seeing is actually being pulled from this <span><a className="bio-link" href="https://data.nasa.gov/Space-Science/Astronomy-Picture-of-the-Day-API/ez2w-t8ua">NASA API</a></span>. It changes daily, so come on back tomorrow to see a different view!</p>
