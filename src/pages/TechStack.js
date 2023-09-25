@@ -9,7 +9,7 @@ export const TechStack = () => {
       <Fade bottom>
           {techData.map(data => 
           (
-            <Slide right>
+            <Slide right key={data.type}>
               <TechCard 
                 key={data.type}
                 type={data.type} 

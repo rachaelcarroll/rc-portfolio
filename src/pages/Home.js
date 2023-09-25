@@ -1,10 +1,10 @@
 import React  from 'react';
 import { Bio } from "./Bio";
 import { TechStack } from "./TechStack";
-import { Contact } from "./Contact";
 import { Mountain } from "../components/Mountain";
 import { tsParticles } from "../config/configParticles";
 import Particles from "react-tsparticles";
+import { Suspense } from 'react';
 
 export const Home = () => {
   return (
@@ -17,8 +17,10 @@ export const Home = () => {
           zIndex="2"
         ></Particles>
         <Mountain />
-        <Bio />
-        <TechStack />
+        <Suspense>
+          <Bio />
+          <TechStack />
+        </Suspense>
       </section>
     </>
   );
