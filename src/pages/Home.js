@@ -15,7 +15,7 @@ export const Home = () => {
 
   useEffect(() => {
     fetchImage().then((data) =>
-      data.url.includes("youtube") ? setApod(nightsky) : setApod(data.url) && setApodTitle(data.title)
+      data.url.includes("youtube") ? setApod(nightsky) : setApod(data.url)
     );
   }, [apod]);
 
