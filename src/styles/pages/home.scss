@@ -25,16 +25,13 @@ canvas {
 }
 
 .hover-text {
+  @include mediaQueries(hover-text);
   font-size: 16px;
   padding: 10px;
   background-color: $dark-grey;
   color: white;
-  width: 30%;
   text-align: left;
   z-index: 5;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
   border-radius: 5px;
 }
 

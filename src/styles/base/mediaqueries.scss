@@ -38,6 +38,11 @@ Base - Media Queries
         font-weight: bold;
       } @else if $property==footer {
         text-align: center;
+      } @else if $property==hover-text {
+        width: 80%;
+        position: fixed;
+        bottom: 320px;
+        right: 20px;
       }
     }
   }
@@ -69,6 +74,11 @@ Base - Media Queries
       } @else if $property==bio {
         font-size: 35px;
         font-weight: bold;
+      } @else if $property==hover-text {
+        width: 50%;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
       }
     }
   }
@@ -100,6 +110,11 @@ Base - Media Queries
       } @else if $property==bio {
         font-size: 50px;
         font-weight: bold;
+      } @else if $property==hover-text {
+        width: 30%;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
       }
     }
   }

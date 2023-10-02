@@ -70,7 +70,7 @@ export const Home = () => {
           </div>
           {isHovering && 
           <div className="hover-text">
-          <p>Oh hey, this space background is actually being pulled from the Astronomy Photo of the Day NASA API. It changes daily, so come on back tomorrow to see a different view!</p>
+          <p>Hi there, this space background is being pulled from the Astronomy Photo of the Day NASA API. It changes daily, so come on back tomorrow to see a different view!</p>
            </div>}
         </div>
         <Mountain />
