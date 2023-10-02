@@ -17,7 +17,7 @@ export const ProjectCard = ({ project }) => {
                         <h3>{project.name}</h3>
                     </div>
                         <p className='summary-text'>{project.summary}</p>
-                        <p><em>HIGHLIGHTS:</em> <span>{project.accomplishments}</span></p>
+                        <p className='accomplishments'><em>Accomplishments:</em> <span> {project.accomplishments}</span></p>
                         <p className='project-text'>{project.tech}</p>
                     <div className='project-links'>
                         <a href={project.repoLink}><FaGithub style={{color: 'white', fontSize: '2.5rem'}}/></a>                     

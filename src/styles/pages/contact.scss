@@ -26,7 +26,6 @@
 }
 
 .resume {
-    @include flex(row, center);
     margin: 1rem 1rem 0rem 1rem;
     color: $light;
     height: 2rem; 

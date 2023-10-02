@@ -29,7 +29,7 @@
   }
   
   button {
-    @include flex(column, center);
+    z-index: 5;
     transition: 500ms;
     border: $light-grey 1px solid;
     border-radius: 3px;
@@ -46,6 +46,11 @@
   }
   
   a {
+    color: $dark;
+    font-family: $ff-secondary;
+  }
+
+  span {
     color: $dark;
     font-family: $ff-secondary;
   }

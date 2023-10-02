@@ -2,7 +2,25 @@
   Base - Grid
   ========================================================================== */
 
-  @mixin grid($viewport) {
+  @mixin project-grid($viewport) {
+	display: grid;
+	@if $viewport==mobile {
+		grid-template-columns: repeat(1, 1fr);
+		justify-items: center;
+		align-items: center;
+	} @else if $viewport==tablet {
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+		align-items: center;
+		row-gap: 10px;
+	} @else if $viewport==desktop {
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: center;
+		align-items: flex-end;
+	}
+}
+
+@mixin tech-grid($viewport) {
 	display: grid;
 	@if $viewport==mobile {
 		grid-template-columns: repeat(1, 1fr);
@@ -19,3 +37,4 @@
 		align-items: flex-end;
 	}
 }
+

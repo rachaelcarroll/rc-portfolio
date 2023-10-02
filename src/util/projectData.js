@@ -1,19 +1,19 @@
-import scene from '../../images/thescene.png';
-import overlook from '../../images/overlook.png';
-import clientell from '../../images/clientell.png';
-import onlydevs from '../../images/onlydevs.png';
-import portfolio from '../../images/portfolio.png'
-import rancid from '../../images/rancid.png';
-import ranch from '../../images/ranch.png';
-import rosemary from '../../images/rosemary.png';
-import daily from '../../images/thedaily.png';
+import scene from '../images/thescene.png';
+import overlook from '../images/overlook.png';
+import clientell from '../images/clientell.png';
+import onlydevs from '../images/onlydevs.png';
+import portfolio from '../images/portfolio.png'
+import rancid from '../images/rancid.png';
+import ranch from '../images/ranch.png';
+import rosemary from '../images/rosemary.png';
+import daily from '../images/thedaily.png';
 
 export const projectData = [
     {
       name: 'the scene',
       image: scene,
-      summary: 'An application that allows a user to shuffle and save amusing music genre conversation starters',
-      tech: 'React | SCSS | Cypress | REST API | Vercel',
+      summary: 'A web app that allows a user to shuffle and save amusing music genre conversation starters',
+      tech: 'React | SCSS | Cypress | Binary Jazz API | Vercel',
       accomplishments: 'Implemented React Hooks, Router, and CSS animations',
       timeline: '1 week',
       deployedLink: 'https://the-scene.vercel.app/',
@@ -47,7 +47,7 @@ export const projectData = [
       image: onlydevs,
       summary: 'A question-answer forum for technical front end development concepts',
       tech: 'React | Cypress | SCSS | PostgreSQL | Express.js | Heroku',
-      accomplishments: 'Self-taught backend technologies to create a database and host an API',
+      accomplishments: 'Self-taught backend technologies to create full stack app',
       timeline: '10 days',
       deployedLink: 'https://onlydevs.herokuapp.com/',
       repoLink: 'https://github.com/rachaelcarroll/only-devs',
@@ -56,9 +56,9 @@ export const projectData = [
     {
       name: 'Portfolio',
       image: portfolio,
-      summary: 'The portfolio site you are currently viewing',
+      summary: 'The site you are currently viewing',
       tech: 'React | tsParticles | SCSS | Figma | Google Analytics | Vercel',
-      accomplishments: 'Astronomy Picture of the Day (APOD) from a NASA API endpoint to create the home image, Google Analytics to track site traffic',
+      accomplishments: 'Implemented Google Analytics to track site traffic',
       deployedLink: 'https://www.rcarroll.co/',
       repoLink: 'https://github.com/rachaelcarroll/rc-portfolio',
       id: 5
@@ -67,7 +67,7 @@ export const projectData = [
       name: 'The Overlook',
       image: overlook,
       summary: 'An application to book and display hotel reservations',
-      tech: 'JavaScript | HTML5 | SCSS | WebPack | Fetch API | Day.js | Lighthouse | Sketch',
+      tech: 'JavaScript | HTML5 | SCSS | WebPack | Day.js | Lighthouse | Sketch',
       accomplishments: 'Robust unit testing, network requests, Lighthouse accessibility rating of 100',
       timeline: '6 days',
       deployedLink: '',
@@ -77,8 +77,8 @@ export const projectData = [
     {
         name: 'Rosemary & Sage',
         image: rosemary,
-        summary: 'An application to view, favorite, and search through a collection of recipes',
-        tech: 'HTML5 | CSS3 | Mocha | Chai | Webpack',
+        summary: 'View, favorite, and search through a collection of recipes',
+        tech: 'JavaScript | HTML | CSS | Mocha | Chai | Webpack',
         accomplishments: 'Utilized array prototype methods to perform data manipulation',
         timeline: '1 week',
         deployedLink: 'https://www.youtube.com/watch?v=JDhKCZePFT0',
@@ -89,9 +89,9 @@ export const projectData = [
         name: 'the daily',
         image: daily,
         summary: 'A daily news reader application, built in 8 hours',
-        tech: 'React | SCSS | Netlify | Miro',
-        accomplishments: 'An 8 hour React challenge. Consumed the NYTimes API to display, categorize, and search daily news',
-        timeline: '1 day',
+        tech: 'React | SCSS | NYTimes API | Netlify | Miro',
+        accomplishments: 'A React challenge to display, categorize, and search daily news',
+        timeline: '8hrs',
         deployedLink: 'https://the-daily-take-home.netlify.app/',
         repoLink: 'https://github.com/rachaelcarroll/nyt-reader',
         id: 8

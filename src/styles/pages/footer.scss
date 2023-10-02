@@ -8,20 +8,17 @@ footer {
     border-top: 1px solid gray;
 
     p {
-        font-size: .7rem;
+        font-size: .8rem;
     }
-}
 
-.footer-links {
-    @include flex(row, evenly);
-}
+    a {
+        z-index: 5;
+        color: $light-teal;
+        font-size: .8rem;
 
-.footer-icon {
-    height: 2.5rem;
-    width: 2.5rem;
-    margin: .5rem;
-
-    &:hover {
-        transform: translateY(-2px);
-      }
+        &:hover {
+            color: rgb(250, 250, 250);
+        }
+    
+    }
 }

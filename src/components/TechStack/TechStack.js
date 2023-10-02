@@ -1,7 +1,7 @@
 import React  from 'react';
 import { Fade, Slide } from "react-reveal";
-import { techData } from "../util/techData";
-import { TechCard } from "../components/TechCard";
+import { techData } from "../../util/techData";
+import { TechCard } from "./TechCard";
 
 export const TechStack = () => {
   return (
@@ -9,7 +9,7 @@ export const TechStack = () => {
       <Fade bottom>
           {techData.map(data => 
           (
-            <Slide right key={data.type}>
+            <Slide right key={data.type} style={{zIndex: "3"}}>
               <TechCard 
                 key={data.type}
                 type={data.type} 

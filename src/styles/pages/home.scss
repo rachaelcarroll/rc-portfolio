@@ -9,69 +9,79 @@ canvas {
 
 .logo {
   @include mediaQueries(logo);
-  z-index: 3;
+  z-index: 2;
   top: 0;
   width: 35rem;
+}
+
+.info {
+  @include flex(column, center, flex-end);
+}
+
+.icon {
+  z-index: 5;
+
+  &:hover {
+    transform: scale(1.1)
+  }
+}
+
+.hover-text {
+  font-size: 16px;
+  padding: 10px;
+  background-color: $dark-grey;
+  color: white;
+  width: 30%;
+  text-align: left;
+  z-index: 5;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 5px;
 }
 
 .mountain {
   @include mediaQueries(mountain);
   z-index: 1;
   min-width: 100vw;
-  height: 150vh;
 }
 
 .about {
   @include flex(column, center);
-  background-color: $dark;
-  padding-bottom: 20px;
-}
-
-.about-header {
-  @include flex(row, center);
-  width: 100%;
-}
-
-.about-text {
-  color: $light;
-  font-size: 5rem;
-  font-family: 'Parisienne', cursive;
-  z-index: 2;
-}
-
-.bio {
   @include mediaQueries(about);
-  @include flex(row, center, flex-start);
   background-color: $dark;
   color: $light;
-  box-shadow: $box-shadow;
-  padding: .5rem;
-  margin-top: -20px;
   z-index: 5;
 }
 
-.bio-text {
-  margin: 0px 30px 0px 30px;
+.bio-details {
+  z-index: 5;
+  text-align: center;
+  margin: 50px 60px 0px 60px;
 }
 
-.bio-link {
-  color: $light-teal;
-
-  &:hover {
-    color: $light;
-  }
+.bio-text {
+  @include mediaQueries(bio);
 }
 
 .bio-btns {
-  @include flex(row, flex-end);
+  @include flex(row, center);
+  margin: 10px;
+  z-index: 5;
+
+  button {
+    margin: 20px;
+  }
 }
 
 .tech-container {
-  @include mediaQueries(grid);
+  @include mediaQueries(tech-grid);
+  z-index: 5;
   width: 100vw;
 }
 
 .tech-content {
+  z-index: 5;
   color: $light;
   padding: .5rem;
   margin: .5rem;
@@ -82,6 +92,7 @@ canvas {
 
 .tech-header-container {
   @include flex(column, center);
+  z-index: 5;
   border-bottom: 1px solid $light-grey;
   margin: 0rem 0rem .5rem 0rem;
   color: $light-grey;
