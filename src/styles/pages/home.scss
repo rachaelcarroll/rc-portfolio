@@ -10,8 +10,6 @@ canvas {
 .logo {
   @include mediaQueries(logo);
   z-index: 2;
-  top: 0;
-  width: 35rem;
 }
 
 .info {

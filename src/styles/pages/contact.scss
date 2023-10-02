@@ -4,7 +4,7 @@
     color: $light;
 
     h2 {
-        font-size: 55px;
+        @include mediaQueries(bio);
         margin: 1.5rem 6rem 0rem 6rem;
         line-height: initial;
     }
