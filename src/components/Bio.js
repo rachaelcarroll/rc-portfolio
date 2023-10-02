@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { about } from '../util/aboutMe';
 import Fade from 'react-reveal/Fade';
 import { Slide } from 'react-reveal';
+import resume from '../util/rachael-carroll.pdf'
 
 export const Bio = () => {
     
@@ -31,9 +32,16 @@ export const Bio = () => {
                                 projects
                             </button> 
                         </Link>
-                        <button className='resume'>
-                            download resume 
-                        </button>
+                        <Link
+                            to={resume}
+                            download="rachael-carroll"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <button className='resume'>
+                                download resume 
+                            </button>
+                        </Link>
                     </Slide>
                 </section>
         </section>
